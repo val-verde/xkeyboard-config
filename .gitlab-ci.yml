@@ -4,7 +4,7 @@
 variables:
   # minimal set of packages required to build xkeyboard-config. extra packages
   # will be installed in the tests where required.
-  ARCH_PKGS: 'xorg-util-macros autoconf automake make gettext pkg-config gcc grep m4 python'
+  ARCH_PKGS: 'xorg-util-macros autoconf automake make gettext pkg-config gcc grep m4 python meson ninja git'
   BUILDDIR: '_build'
   # installation directory must be inside $CI_PROJECT_DIR to allow for artifact caching
   INSTDIR: '$CI_PROJECT_DIR/_inst'
@@ -33,6 +33,15 @@ variables:
    - make
    - if test x"$MAKE_EXTRA_COMMAND" != "x"; then make $MAKE_EXTRA_COMMAND; fi
 
+
+.meson_build:
+  extends: .default_setup
+  script:
+    - meson "$BUILDDIR" -Dprefix="$INSTDIR"
+    - meson configure "$BUILDDIR"
+    - ninja -C "$BUILDDIR"
+    - if test x"$NINJA_EXTRA_COMMAND" != "x"; then ninja -C "$BUILDDIR" $NINJA_EXTRA_COMMAND; fi
+
 make_install:
   extends: .default_build
   stage: build
@@ -58,6 +67,32 @@ make_distcheck:
   stage: build
   variables:
       MAKE_EXTRA_COMMAND: "distcheck"
+
+meson_build:
+  extends: .meson_build
+  stage: build
+  variables:
+      NINJA_EXTRA_COMMAND: "install"
+  after_script:
+    - pacman -S --noconfirm tree
+    - tree $INSTDIR
+  artifacts:
+    name: installed files
+    expire_in: 20 min
+    paths:
+      - $INSTDIR/
+
+meson_test:
+  extends: .meson_build
+  stage: build
+  variables:
+      NINJA_EXTRA_COMMAND: "test"
+
+meston_dist:
+  extends: .meson_build
+  stage: build
+  variables:
+      NINJA_EXTRA_COMMAND: "dist"
 
 xmllint:
   image: archlinux/base

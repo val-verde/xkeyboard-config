@@ -2,6 +2,7 @@
 
 import argparse
 import re
+import sys
 
 
 class Layout(object):
@@ -132,5 +133,9 @@ if __name__ == '__main__':
     parser.add_argument('files', nargs='+', type=str)
     ns = parser.parse_args()
 
-    with open(ns.dest, 'w') as fd:
+    dest = None
+    if ns.dest == '-':
+        dest = sys.stdout 
+
+    with dest or open(ns.dest, 'w') as fd:
         map_variant(fd, ns.files, ns.want, ns.number)
