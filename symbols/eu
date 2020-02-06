@@ -1,7 +1,7 @@
 // Based on <http://eurkey.steffen.bruentjen.eu/>
 // Copyright 2012 Steffen Bruentjen (eurkey (at) steffen dot bruentjen dot de)
 
-default  partial alphanumeric_keys modifier_keys 
+default partial alphanumeric_keys modifier_keys 
 xkb_symbols "basic"  {
 
         name[Group1] = "EurKEY (US based layout with European letters)";

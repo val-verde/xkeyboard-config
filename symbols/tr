@@ -3,7 +3,7 @@
 // Nilgün Belma Bugüner <nilgun@belgeler.org>, 2005
 
 // Turkish Q layout
-default  partial
+default partial
 xkb_symbols "basic" {
 
     include "latin"

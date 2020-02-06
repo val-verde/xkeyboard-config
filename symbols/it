@@ -5,7 +5,7 @@
 // 18 July 2018 - Fixed inconsistent 'ì' and 'ù' in it(intl)
 //                Alessandro Pellegrini <pellegrini@dis.uniroma1.it>
 
-default  partial alphanumeric_keys
+default partial alphanumeric_keys
 xkb_symbols "basic" {
 
     include "latin(type4)"

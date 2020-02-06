@@ -5,7 +5,7 @@
 // 2018/07/15 @a13 (a.k.a. @dbvvmpg) and Stepanenko Andrey <ftvkyo2011@yandex.ru>
 
 // Windows layout
-default  partial alphanumeric_keys
+default partial alphanumeric_keys
 xkb_symbols "winkeys" {
 
     include "ru(common)"
