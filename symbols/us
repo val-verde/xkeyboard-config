@@ -1947,7 +1947,6 @@ xkb_symbols "drix" {
 		type[Group1]="TWO_LEVEL",
 		[ ISO_Level3_Shift, Multi_key ]
 	};
-	modifier_map Mod5 { <RALT> };
 };
 
 // German and Swedish characters added as third level symbols to the US keyboard layout
