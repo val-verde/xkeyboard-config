@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 import argparse
 import re
@@ -12,8 +12,8 @@ class Layout(object):
             assert variant is None
             # parse a layout(variant) string
             match = re.match(r'([^(]+)\(([^)]+)\)', layout)
-            self.layout = match[1]
-            self.variant = match[2]
+            self.layout = match.groups()[0]
+            self.variant = match.groups()[1]
 
     def __str__(self):
         if self.variant:
