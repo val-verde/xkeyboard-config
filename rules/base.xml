@@ -7277,6 +7277,12 @@
       </option>
       <option>
         <configItem>
+          <name>misc:apl</name>
+          <description>Enable APL overlay characters</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>shift:both_capslock</name>
           <description>Both Shift together enable Caps Lock</description>
         </configItem>
