@@ -1783,6 +1783,18 @@
             <description>Belarusian (Latin)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>ru</name>
+            <description>Russian (Belarus)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>intl</name>
+            <description>Belarusian (intl.)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
