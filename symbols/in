@@ -467,7 +467,7 @@ xkb_symbols "ben_inscript" {
 };
 
 xkb_symbols "ben_gitanjali" {
- name[Group1]= "Bangla (India, Uni Gitanjali)";
+ name[Group1]= "Bangla (India, Gitanjali)";
    key <ESC>   { [ Escape			] };
 
 // numbers
@@ -1519,7 +1519,7 @@ xkb_symbols "urd-phonetic3" {
 partial alphanumeric_keys
 xkb_symbols "urd-winkeys" {
     include "pk(urd-nla)"
-    name[Group1]= "Urdu (Win keys)";
+    name[Group1]= "Urdu (Windows)";
 };
 
 // based on a keyboard map from an 'xkb/symbols/gur' file
@@ -1912,7 +1912,7 @@ xkb_symbols "mal_enhanced" {
 //
 partial alphanumeric_keys
 xkb_symbols "hin-kagapa" {
-     name[Group1] = "Hindi (KaGaPa phonetic)";
+     name[Group1] = "Hindi (KaGaPa, phonetic)";
      key.type="FOUR_LEVEL";
 
     // Roman digits
@@ -1978,14 +1978,14 @@ xkb_symbols "hin-kagapa" {
 partial alphanumeric_keys
 xkb_symbols "san-kagapa" {
   include "in(hin-kagapa)"
-  name[Group1] = "Sanskrit (KaGaPa phonetic)";
+  name[Group1] = "Sanskrit (KaGaPa, phonetic)";
 };
 
 // Marathi uses Devanagari layout of Hindi
 partial alphanumeric_keys
 xkb_symbols "mar-kagapa" {
   include "in(hin-kagapa)"
-  name[Group1] = "Marathi (KaGaPa phonetic)";
+  name[Group1] = "Marathi (KaGaPa, phonetic)";
 };
 
 
@@ -2003,7 +2003,7 @@ xkb_symbols "mar-kagapa" {
 //
 partial alphanumeric_keys
 xkb_symbols "kan-kagapa" {
-    name[Group1] = "Kannada (KaGaPa phonetic)";
+    name[Group1] = "Kannada (KaGaPa, phonetic)";
     key.type="FOUR_LEVEL";
 
     // Roman digits
@@ -2080,7 +2080,7 @@ xkb_symbols "kan-kagapa" {
 //
 partial alphanumeric_keys
 xkb_symbols "tel-kagapa" {
-    name[Group1] = "Telugu (KaGaPa phonetic)";
+    name[Group1] = "Telugu (KaGaPa, phonetic)";
     key.type="FOUR_LEVEL";
 
     // Roman digits

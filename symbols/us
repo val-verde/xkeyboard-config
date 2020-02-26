@@ -1056,7 +1056,7 @@ xkb_symbols "olpc" {
 partial alphanumeric_keys
 xkb_symbols "olpc2" {
    include "us(olpc)"
-   name[Group1]= "English (the divide/multiply keys toggle the layout)";
+   name[Group1]= "English (the divide/multiply toggle the layout)";
    include "group(olpc)"
 };
 
@@ -1638,7 +1638,7 @@ xkb_symbols "scn" {
 partial alphanumeric_keys
 xkb_symbols "intl-unicode" {
 
- name[Group1]= "English (US, international AltGr Unicode combining)";
+ name[Group1]= "English (US, intl., AltGr Unicode combining)";
 
  include "us(intl)"
  include "level3(ralt_switch)"
@@ -1688,7 +1688,7 @@ xkb_symbols "intl-unicode" {
 partial alphanumeric_keys
 xkb_symbols "alt-intl-unicode" {
 
- name[Group1]= "English (US, international AltGr Unicode combining, alternative)";
+ name[Group1]= "English (US, intl., AltGr Unicode combining, alt.)";
 
  include "us(intl-unicode)"
 
@@ -1835,7 +1835,7 @@ xkb_symbols "3l" {
 partial modifier_keys
 xkb_symbols "3l-cros" {
     include "us(3l)"
-    name[Group1] = "English (3l, chromebook)";
+    name[Group1] = "English (3l, Chromebook)";
     key <LWIN> {
         type[Group1] = "ONE_LEVEL",
         symbols[Group1] = [ Tab ]

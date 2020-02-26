@@ -4,7 +4,7 @@
 default partial alphanumeric_keys modifier_keys 
 xkb_symbols "basic"  {
 
-        name[Group1] = "EurKEY (US based layout with European letters)";
+        name[Group1] = "EurKEY (US)";
 
         key <TLDE> { [          grave,        asciitilde,           dead_grave,           dead_tilde ] };
         key <AE01> { [              1,            exclam,           exclamdown,          onesuperior ] };

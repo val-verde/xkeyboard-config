@@ -123,7 +123,7 @@ xkb_symbols "tam_TAB" {
 partial alphanumeric_keys modifier_keys
 xkb_symbols "us" {
   include "us(basic)"
-  name[Group1]= "Sinhala (US, with Sinhala letters)";
+  name[Group1]= "Sinhala (US)";
 //
 //                   UNSHIFTED,         SHIFT,           ALT
 //                   --------------------------------------------

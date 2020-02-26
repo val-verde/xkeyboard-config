@@ -141,7 +141,7 @@ xkb_symbols "winkeys" {
 
     include "latin"
 
-    name[Group1]="Romanian (Win keys)";
+    name[Group1]="Romanian (Windows)";
 
     key <TLDE> { [ bracketright, bracketleft            ]       };
 

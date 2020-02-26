@@ -74,7 +74,7 @@ xkb_symbols "stea" {
     // work in XKB.  Therefore the combining codepoint assignments
     // have been omitted.
 
-    name[Group1]= "Lao (STEA proposed standard layout)";
+    name[Group1]= "Lao (STEA)";
 
     key <TLDE> { [  quotedbl,      apostrophe			]};
     key <AE01> { [ 0x1000ea2,               1,       0x1000ed1	]};

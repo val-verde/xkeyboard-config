@@ -86,7 +86,7 @@ xkb_symbols "winkeys" {
 
     include "fi(kotoistus)"
 
-    name[Group1]="Finnish (Winkeys)";
+    name[Group1]="Finnish (Windows)";
 
     include "eurosign(5)"
 };

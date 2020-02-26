@@ -17,42 +17,42 @@
           <configItem>
             <name>dyalog</name>
             <shortDescription>dlg</shortDescription>
-            <description>Dyalog APL complete</description>
+            <description>APL symbols (Dyalog APL)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>sax</name>
             <shortDescription>sax</shortDescription>
-            <description>APL Keyboard Symbols: sax</description>
+            <description>APL symbols (SAX, Sharp APL for Unix)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>unified</name>
             <shortDescription>ufd</shortDescription>
-            <description>APL Keyboard Symbols: Unified Layout</description>
+            <description>APL symbols (unified)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>apl2</name>
             <shortDescription>apl2</shortDescription>
-            <description>APL Keyboard Symbols: IBM APL2</description>
+            <description>APL symbols (IBM APL2)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>aplplusII</name>
             <shortDescription>aplII</shortDescription>
-            <description>APL Keyboard Symbols: Manugistics APL*PLUS II</description>
+            <description>APL symbols (Manugistics APL*PLUS II)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>aplx</name>
             <shortDescription>aplx</shortDescription>
-            <description>APL Keyboard Symbols: APLX Unified APL Layout</description>
+            <description>APL symbols (APLX unified)</description>
           </configItem>
         </variant>
       </variantList>
@@ -102,7 +102,7 @@
         <variant>
           <configItem>
             <name>us</name>
-            <description>German (US, with German letters)</description>
+            <description>German (US)</description>
             <languageList>
               <iso639Id>eng</iso639Id>
             </languageList>
@@ -111,7 +111,7 @@
         <variant>
           <configItem>
             <name>hu</name>
-            <description>German (with Hungarian letters and no dead keys)</description>
+            <description>German (with Hungarian letters, no dead keys)</description>
             <languageList>
               <iso639Id>ger</iso639Id>
               <iso639Id>hun</iso639Id>
@@ -155,19 +155,19 @@
         <variant>
           <configItem>
             <name>bone_eszett_home</name>
-            <description>German (Bone, eszett home row)</description>
+            <description>German (Bone, eszett in the home row)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>neo_qwertz</name>
-            <description>German (Neo qwertz)</description>
+            <description>German (Neo, QWERTZ)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>neo_qwerty</name>
-            <description>German (Neo qwerty)</description>
+            <description>German (Neo, QWERTY)</description>
           </configItem>
         </variant>
         <variant>
@@ -196,7 +196,7 @@
           <configItem>
             <name>lld</name>
             <shortDescription>de_lld</shortDescription>
-            <description>German Ladin</description>
+            <description>German (Ladin)</description>
             <languageList>
               <iso639Id>ger</iso639Id>
               <iso639Id>lld</iso639Id>
@@ -254,7 +254,7 @@
         <variant>
           <configItem>
             <name>us_dvorak</name>
-            <description>Lithuanian (US Dvorak with Lithuanian letters)</description>
+            <description>Lithuanian (Dvorak)</description>
           </configItem>
         </variant>
         <variant>
@@ -278,49 +278,49 @@
         <variant>
           <configItem>
             <name>dvorak</name>
-            <description>Latvian (US Dvorak)</description>
+            <description>Latvian (Dvorak)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>ykeydvorak</name>
-            <description>Latvian (US Dvorak, Y variant)</description>
+            <description>Latvian (Dvorak, with Y)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>minuskeydvorak</name>
-            <description>Latvian (US Dvorak, minus variant)</description>
+            <description>Latvian (Dvorak, with minus)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>dvorakprogr</name>
-            <description>Latvian (programmer US Dvorak)</description>
+            <description>Latvian (programmer Dvorak)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>ykeydvorakprogr</name>
-            <description>Latvian (programmer US Dvorak, Y variant)</description>
+            <description>Latvian (programmer Dvorak, with Y)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>minuskeydvorakprogr</name>
-            <description>Latvian (programmer US Dvorak, minus variant)</description>
+            <description>Latvian (programmer Dvorak, with minus)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>colemak</name>
-            <description>Latvian (US Colemak)</description>
+            <description>Latvian (Colemak)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>apostrophecolemak</name>
-            <description>Latvian (US Colemak, apostrophe variant)</description>
+            <description>Latvian (Colemak, with apostrophe)</description>
           </configItem>
         </variant>
         <variant>
@@ -344,13 +344,13 @@
         <variant>
           <configItem>
             <name>intl-unicode</name>
-            <description>English (US, international AltGr Unicode combining)</description>
+            <description>English (US, intl., AltGr Unicode combining)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>alt-intl-unicode</name>
-            <description>English (US, international AltGr Unicode combining, alternative)</description>
+            <description>English (US, intl., AltGr Unicode combining, alt.)</description>
           </configItem>
         </variant>
         <variant>
@@ -456,7 +456,7 @@
         <variant>
           <configItem>
             <name>3l-cros</name>
-            <description>English (3l, chromebook)</description>
+            <description>English (3l, Chromebook)</description>
           </configItem>
         </variant>
         <variant>
@@ -702,7 +702,7 @@
         <variant>
           <configItem>
             <name>olpc-phonetic</name>
-            <description>Armenian (OLPC phonetic)</description>
+            <description>Armenian (OLPC, phonetic)</description>
           </configItem>
         </variant>
       </variantList>
@@ -744,13 +744,13 @@
         <variant>
           <configItem>
             <name>basic_ext</name>
-            <description>Arabic (with extensions for Arabic-written other languages and European digits preferred)</description>
+            <description>Arabic (Arabic numerals, extensions in the 4th level)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>basic_ext_digits</name>
-            <description>Arabic (with extensions for Arabic-written other languages and Arabic digits preferred)</description>
+            <description>Arabic (Eastern Arabic numerals, extensions in the 4th level)</description>
           </configItem>
         </variant>
         <variant>
@@ -918,7 +918,7 @@
         <variant>
           <configItem>
             <name>us-alt</name>
-            <description>French (US, with French letters, with dead keys, alternative)</description>
+            <description>French (US with dead keys, alt.)</description>
           </configItem>
         </variant>
         <variant>
@@ -967,7 +967,7 @@
           <configItem>
             <name>lld</name>
             <shortDescription>it_lld</shortDescription>
-            <description>Italian Ladin</description>
+            <description>Italian (Ladin)</description>
             <languageList>
               <iso639Id>it</iso639Id>
               <iso639Id>lld</iso639Id>
@@ -992,13 +992,13 @@
         <variant>
           <configItem>
             <name>sun_type7</name>
-            <description>Japanese (Sun Type 7 - pc compatible)</description>
+            <description>Japanese (Sun Type 7, PC-compatible)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
             <name>sun_type7_suncompat</name>
-            <description>Japanese (Sun Type 7 - sun compatible)</description>
+            <description>Japanese (Sun Type 7, Sun-compatible)</description>
           </configItem>
         </variant>
       </variantList>
@@ -1225,7 +1225,7 @@
         <name>eu</name>
         <!-- Keyboard indicator for European layouts -->
         <shortDescription>eu</shortDescription>
-        <description>EurKEY (US based layout with European letters)</description>
+        <description>EurKEY (US)</description>
         <languageList>
           <iso639Id>cat</iso639Id>
           <iso639Id>dan</iso639Id>

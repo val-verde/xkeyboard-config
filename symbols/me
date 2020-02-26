@@ -53,12 +53,12 @@ xkb_symbols "latinunicodeyz" {
 
 xkb_symbols "cyrillicalternatequotes" {
   include "rs(alternatequotes)"
-  name[Group1]= "Montenegrin (Cyrillic with guillemets)";
+  name[Group1]= "Montenegrin (Cyrillic, with guillemets)";
 };
 
 xkb_symbols "latinalternatequotes" {
   include "rs(latinalternatequotes)"
-  name[Group1]= "Montenegrin (Latin with guillemets)";
+  name[Group1]= "Montenegrin (Latin, with guillemets)";
 
   key <AD06> { [ any, any, zacute,        Zacute         ] }; // z
   key <AC02> { [ any, any, sacute,        Sacute         ] }; // s

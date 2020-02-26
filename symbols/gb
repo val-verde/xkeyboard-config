@@ -74,7 +74,7 @@ xkb_symbols "extd" {
 
     include "latin"
 
-    name[Group1]="English (UK, extended, with Win keys)";
+    name[Group1]="English (UK, extended, Windows)";
 
     key <TLDE> { [ dead_grave,    notsign,       brokenbar,    NoSymbol ] };
 
@@ -182,7 +182,7 @@ xkb_symbols "mac_intl" {
 
     include "latin" 
 
-    name[Group1]="English (UK, intl., Macintosh)";
+    name[Group1]="English (UK, Macintosh, intl.)";
 
     key <AE02>  { [   2,                       at,           EuroSign,    onehalf ] };
     key <AE03>  { [   3,                 sterling,        twosuperior,   onethird ] };
