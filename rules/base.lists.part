@@ -6,7 +6,7 @@
 //              ori pk ru scc sy syr tel th tj tam ua uz
 
 // PC models
-! $pcmodels = pc101 pc102 pc104 pc105
+! $pcmodels = pc86 pc101 pc102 pc104 pc104alt pc105
 
 // Jolla devices and keyboards
 ! $jollamodels = jollasbj

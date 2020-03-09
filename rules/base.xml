@@ -4,6 +4,13 @@
   <modelList>
     <model>
       <configItem>
+        <name>pc86</name>
+        <description>Generic 86-key PC</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
         <name>pc101</name>
         <description>Generic 101-key PC</description>
         <vendor>Generic</vendor>
@@ -20,6 +27,13 @@
       <configItem>
         <name>pc104</name>
         <description>Generic 104-key PC</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc104alt</name>
+        <description>Generic 104 with L-shaped Enter and small Backspace with Backslash left to it</description>
         <vendor>Generic</vendor>
       </configItem>
     </model>

@@ -889,7 +889,7 @@ xkb_geometry "abnt2" {
 // Created by Alexander Pohoyda <alexander.pohoyda@gmx.net>
 
 xkb_geometry "pc86" {
-    description = "Noname keyboard with 86 keys, DE";
+    description = "Generic 86";
     width = 287;
     height = 143;
     baseColor = "grey20";
