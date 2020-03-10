@@ -17,9 +17,6 @@
 // Nokia devices and keyboards
 ! $nokiamodels = nokiasu8w nokiarx44 nokiarx51
 
-// PC geometries - they have special geometry but symbols are mostly pc105
-! $pcgeometries = latitude
-
 // TypeMatrix geometries
 ! $tmgeometries = tm2020 tm2030PS2 tm2030USB tm2030USB-102 tm2030USB-106
 
