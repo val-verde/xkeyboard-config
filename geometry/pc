@@ -26,7 +26,7 @@
 
 default xkb_geometry "pc101" {
 
-    description= "Generic 101";
+    description= "Generic 101-key PC";
     width= 470;
     height= 180;
 
@@ -184,7 +184,7 @@ default xkb_geometry "pc101" {
 
 xkb_geometry "pc102" {
 
-    description= "Generic 102";
+    description= "Generic 102-key PC";
     width= 470;
     height= 180;
 
@@ -344,7 +344,7 @@ xkb_geometry "pc102" {
 
 xkb_geometry "pc104" {
 
-    description= "Generic 104";
+    description= "Generic 104-key PC";
     width= 470;
     height= 180;
 
@@ -503,7 +503,7 @@ xkb_geometry "pc104" {
 
 xkb_geometry "pc105" {
 
-    description= "Generic 105";
+    description= "Generic 105-key PC";
     width= 470;
     height= 180;
 
@@ -667,7 +667,7 @@ xkb_geometry "pc105" {
 // Created by Alexander Pohoyda <alexander.pohoyda@gmx.net>
 
 xkb_geometry "pc86" {
-    description = "Generic 86";
+    description = "Generic 86-key PC";
     width = 287;
     height = 143;
     baseColor = "grey20";
@@ -835,7 +835,7 @@ xkb_geometry "pc86" {
 
 xkb_geometry "pc104alt" {
 
-    description= "Generic 104 with L-shaped Enter and small Backspace with Backslash left to it";
+    description= "Generic 104-key PC with L-shaped Enter key";
     width= 470;
     height= 210;
 

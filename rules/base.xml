@@ -19,7 +19,7 @@
     <model>
       <configItem>
         <name>pc102</name>
-        <description>Generic 102-key PC (intl.)</description>
+        <description>Generic 102-key PC</description>
         <vendor>Generic</vendor>
       </configItem>
     </model>
@@ -33,14 +33,14 @@
     <model>
       <configItem>
         <name>pc104alt</name>
-        <description>Generic 104 with L-shaped Enter and small Backspace with Backslash left to it</description>
+        <description>Generic 104-key PC with L-shaped Enter key</description>
         <vendor>Generic</vendor>
       </configItem>
     </model>
     <model>
       <configItem>
         <name>pc105</name>
-        <description>Generic 105-key PC (intl.)</description>
+        <description>Generic 105-key PC</description>
         <vendor>Generic</vendor>
       </configItem>
     </model>
