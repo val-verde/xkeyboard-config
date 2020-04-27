@@ -218,6 +218,14 @@
             <description>Old Hungarian</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>ohu_lig</name>
+            <shortDescription>ohu_lig</shortDescription>
+            <description>Old Hungarian (for ligatures)</description>
+          </configItem>
+        </variant>
+
       </variantList>
     </layout>
     <layout>
