@@ -1295,6 +1295,26 @@
       </configItem>
       <variantList/>
     </layout>
+    <layout>
+      <configItem>
+        <name>in</name>
+        <!-- Keyboard indicator for Indian layouts -->
+        <shortDescription>in</shortDescription>
+        <description>Indian</description>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>modi-kagapa</name>
+            <shortDescription>mr</shortDescription>
+            <description>Modi (KaGaPa phonetic)</description>
+            <languageList>
+              <iso639Id>mar</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
   </layoutList>
   <optionList>
     <group allowMultipleSelection="true">
