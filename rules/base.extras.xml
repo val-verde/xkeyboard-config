@@ -469,6 +469,12 @@
         </variant>
         <variant>
           <configItem>
+            <name>3l-emacs</name>
+            <description>English (3l, emacs)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>scn</name>
             <description>Sicilian (US keyboard)</description>
             <languageList>
