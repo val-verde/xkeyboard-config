@@ -2406,17 +2406,47 @@
     <layout>
       <configItem>
         <name>dz</name>
-        <shortDescription>la</shortDescription>
-        <description>Berber (Algeria, Latin)</description>
+        <shortDescription>kab</shortDescription>
+        <description>Kabylian (azerty layout, no dead keys)</description>
       </configItem>
       <variantList>
         <variant>
           <configItem>
-            <name>ber</name>
-            <shortDescription>ber</shortDescription>
-            <description>Berber (Algeria, Tifinagh)</description>
+            <name>azerty-deadkeys</name>
+            <shortDescription>kab</shortDescription>
+            <description>Kabylian (azerty layout, with dead keys)</description>
             <languageList>
-              <iso639Id>ber</iso639Id>
+              <iso639Id>kab</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>qwerty-gb-deadkeys</name>
+            <shortDescription>kab</shortDescription>
+            <description>Kabylian (qwerty-gb layout, with dead keys)</description>
+            <languageList>
+              <iso639Id>kab</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>qwerty-us-deadkeys</name>
+            <shortDescription>kab</shortDescription>
+            <description>Kabylian (qwerty-us layout, with dead keys)</description>
+            <languageList>
+              <iso639Id>kab</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ber</name>
+            <shortDescription>kab</shortDescription>
+            <description>Kabylian (Algeria, Tifinagh)</description>
+            <languageList>
+              <iso639Id>kab</iso639Id>
             </languageList>
           </configItem>
         </variant>
