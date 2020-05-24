@@ -207,6 +207,16 @@
     </layout>
     <layout>
       <configItem>
+        <name>eg</name>
+        <shortDescription>ⲕⲏⲙⲉ</shortDescription>
+        <description>Coptic</description>
+        <languageList>
+          <iso639Id>cop</iso639Id>
+        </languageList>
+      </configItem>
+    </layout>
+    <layout>
+      <configItem>
         <name>hu</name>
         <description>Hungarian</description>
       </configItem>
