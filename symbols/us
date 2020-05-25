@@ -1178,6 +1178,31 @@ xkb_symbols "chr" {
     key <AB10> { [      U13C2,      U13C9 ] };
 };
 
+// Add Hawaiian `okina and kahako to US layout
+// Author: Greg Meyer <gregory.meyer@gmail.com>, 2020
+// this mapping follows the one for Windows here: http://www.olelo.hawaii.edu/enehana/winkbd.php
+// `okina replaces apostrophe (apostrophe moves to level 3)
+// vowels with kahako (macron) are level 3 symbols
+partial alphanumeric_keys
+xkb_symbols "haw"  {
+
+    include "us(basic)"
+    name[Group1] = "Hawaiian";
+
+    // `okina replaces single apostrophe
+    // alt gives the literal apostrophe
+    key <AC11> {[ U02BB, quotedbl, apostrophe ] };
+
+    // kahako
+    key <AC01> {[ a, A, amacron, Amacron ]};
+    key <AD03> {[ e, E, emacron, Emacron ]};
+    key <AD07> {[ u, U, umacron, Umacron ]};
+    key <AD08> {[ i, I, imacron, Imacron ]};
+    key <AD09> {[ o, O, omacron, Omacron ]};
+
+    include "level3(ralt_switch)"
+};
+
 // Serbian charecters added as third level symbols to US keyboard layout.
 
 partial alphanumeric_keys
