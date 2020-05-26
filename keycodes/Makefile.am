@@ -2,7 +2,7 @@ SUBDIRS = digital_vndr sgi_vndr
 
 keycodesdir = $(xkb_base)/keycodes
 
-keycodes_DATA = \
+dist_keycodes_DATA = \
 aliases \
 amiga \
 ataritt \
@@ -19,5 +19,3 @@ sun \
 xfree86 \
 xfree98 \
 README
-
-EXTRA_DIST = $(keycodes_DATA)
