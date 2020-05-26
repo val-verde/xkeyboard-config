@@ -77,8 +77,6 @@ AC_OUTPUT([ po/Makefile.in
 Makefile
 compat/Makefile
 geometry/Makefile
-geometry/digital_vndr/Makefile
-geometry/sgi_vndr/Makefile
 keycodes/Makefile
 keycodes/digital_vndr/Makefile
 keycodes/sgi_vndr/Makefile
