@@ -212,6 +212,7 @@
         <description>Coptic</description>
         <languageList>
           <iso639Id>cop</iso639Id>
+          <iso639Id>egy</iso639Id>
         </languageList>
       </configItem>
     </layout>
