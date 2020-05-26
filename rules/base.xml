@@ -2297,6 +2297,27 @@
             </languageList>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>iipa</name>
+            <shortDescription>iipa</shortDescription>
+            <description>Indic IPA (IIPA)</description>
+            <languageList>
+              <iso639Id>eng</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        
+        <variant>
+          <configItem>
+            <name>marathi</name>
+            <shortDescription>ins</shortDescription>
+            <description>मराठी इन्स्क्रिप्ट</description>
+            <languageList>
+              <iso639Id>eng</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
