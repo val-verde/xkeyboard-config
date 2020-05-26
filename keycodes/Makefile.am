@@ -1,5 +1,3 @@
-SUBDIRS = digital_vndr sgi_vndr
-
 keycodesdir = $(xkb_base)/keycodes
 
 dist_keycodes_DATA = \
@@ -19,3 +17,9 @@ dist_keycodes_DATA = \
     xfree86 \
     xfree98 \
     README
+
+digitaldir = $(keycodesdir)/digital_vndr
+dist_digital_DATA = digital_vndr/lk digital_vndr/pc
+
+sgidir = $(keycodesdir)/sgi_vndr
+dist_sgi_DATA = sgi_vndr/indigo sgi_vndr/indy sgi_vndr/iris

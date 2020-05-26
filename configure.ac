@@ -78,8 +78,6 @@ Makefile
 compat/Makefile
 geometry/Makefile
 keycodes/Makefile
-keycodes/digital_vndr/Makefile
-keycodes/sgi_vndr/Makefile
 rules/Makefile
 rules/compat/Makefile
 symbols/Makefile
