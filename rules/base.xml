@@ -1370,6 +1370,16 @@
         </variant>
         <variant>
           <configItem>
+            <name>haw</name>
+            <shortDescription>haw</shortDescription>
+            <description>Hawaiian</description>
+            <languageList>
+              <iso639Id>haw</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>euro</name>
             <description>English (US, euro on 5)</description>
           </configItem>
