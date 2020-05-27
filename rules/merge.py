@@ -31,6 +31,12 @@ def merge(dest, files):
     as header, these need to get written out first.
     '''
 
+    def sort_basename(ftuple):
+        return os.path.basename(ftuple[0])
+
+    # sort the file list by basename
+    files.sort(key=sort_basename)
+
     # pre-populate with the empty header so it's the first one to be written
     # out. We use section_names to keep the same order as we get the files
     # passed in (superfluous with python 3.6+ since the dict keeps the
