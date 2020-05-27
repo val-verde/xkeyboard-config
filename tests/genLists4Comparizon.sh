@@ -12,8 +12,8 @@ F2=gn2ll.lst
 F1b=${F1}base
 F1e=${F1}extras
 
-xsltproc $ROOT/xslt/reg2ll.xsl $ROOT/rules/base.xml > $F1b
-xsltproc $ROOT/xslt/reg2ll.xsl $ROOT/rules/base.extras.xml | \
+xsltproc reg2ll.xsl $ROOT/rules/base.xml > $F1b
+xsltproc reg2ll.xsl $ROOT/rules/base.extras.xml | \
   grep -v "sun_type" > $F1e
 
 cat $F1b $F1e | sort | uniq > $F1
