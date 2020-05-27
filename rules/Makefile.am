@@ -21,53 +21,53 @@ install-data-hook:
 endif
 
 parts = \
-	0000-base.hdr.part \
-	0001-base.lists.part \
-	0002-RULESET.lists.base.part \
+	0000-hdr.part \
+	0001-lists.part \
+	0002-RULESET.lists.part \
 	0004-RULESET.m_k.part \
-	0005-base.l1_k.part \
-	0006-base.l_k.part \
-	0007-base.o_k.part \
-	0008-base.ml_g.part \
-	0009-base.m_g.part \
-	0011-base.mlv_s.part \
-	0013-base.ml_s.part \
-	0015-base.ml1_s.part \
-	0018-base.ml2_s.part  \
-	0020-base.ml3_s.part  \
-	0022-base.ml4_s.part  \
+	0005-l1_k.part \
+	0006-l_k.part \
+	0007-o_k.part \
+	0008-ml_g.part \
+	0009-m_g.part \
+	0011-mlv_s.part \
+	0013-ml_s.part \
+	0015-ml1_s.part \
+	0018-ml2_s.part  \
+	0020-ml3_s.part  \
+	0022-ml4_s.part  \
 	0026-RULESET.m_s.part \
 	0027-RULESET.ml_s1.part \
-	0033-base.ml_c.part \
-	0034-base.ml1_c.part \
-	0035-base.m_t.part \
-	0036-base.lo_s.part \
-	0037-base.l1o_s.part \
-	0038-base.l2o_s.part \
-	0039-base.l3o_s.part \
-	0040-base.l4o_s.part \
-	0042-base.o_s.part \
-	0043-base.o_c.part \
-	0044-base.o_t.part
+	0033-ml_c.part \
+	0034-ml1_c.part \
+	0035-m_t.part \
+	0036-lo_s.part \
+	0037-l1o_s.part \
+	0038-l2o_s.part \
+	0039-l3o_s.part \
+	0040-l4o_s.part \
+	0042-o_s.part \
+	0043-o_c.part \
+	0044-o_t.part
 
 compat_parts = \
-	compat/0003-base.lists.part \
-	compat/0010-base.mlv_s.part \
-	compat/0012-base.ml_s.part \
-	compat/0014-base.ml1_s.part \
-	compat/0016-base.ml1v1_s.part \
-	compat/0017-base.ml2_s.part \
-	compat/0019-base.ml3_s.part \
-	compat/0021-base.ml4_s.part \
-	compat/0023-base.ml2v2_s.part  \
-	compat/0024-base.ml3v3_s.part  \
-	compat/0025-base.ml4v4_s.part  \
-	compat/0028-base.lv_c.part   \
-	compat/0029-base.l1v1_c.part \
-	compat/0030-base.l2v2_c.part \
-	compat/0031-base.l3v3_c.part \
-	compat/0032-base.l4v4_c.part \
-	compat/0041-base.o_s.part
+	compat/0003-lists.part \
+	compat/0010-mlv_s.part \
+	compat/0012-ml_s.part \
+	compat/0014-ml1_s.part \
+	compat/0016-ml1v1_s.part \
+	compat/0017-ml2_s.part \
+	compat/0019-ml3_s.part \
+	compat/0021-ml4_s.part \
+	compat/0023-ml2v2_s.part  \
+	compat/0024-ml3v3_s.part  \
+	compat/0025-ml4v4_s.part  \
+	compat/0028-lv_c.part   \
+	compat/0029-l1v1_c.part \
+	compat/0030-l2v2_c.part \
+	compat/0031-l3v3_c.part \
+	compat/0032-l4v4_c.part \
+	compat/0041-o_s.part
 
 if USE_COMPAT_RULES
 parts += $(compat_parts)
