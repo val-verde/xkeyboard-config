@@ -53,6 +53,6 @@ for i in $ROOT/symbols/*; do
   fi
 done | sort | uniq > $F2
 
-diff $F1 $F2
+diff -u $F1 $F2
 
 echo "Legend: < is for rules/base.*xml.in, > is for symbols/*"
