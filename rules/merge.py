@@ -4,6 +4,20 @@ import argparse
 import os
 import sys
 
+
+def handle_file(path):
+    '''
+    Return a tuple of (header, path) for the file at path.
+    If the file does not have a header, the header is the empty string.
+    '''
+    with open(path) as fd:
+        header = fd.readline()
+        if header.startswith('! '):
+            return header, path
+        else:
+            return '', path
+
+
 def merge(dest, files):
     '''
     Merge the content of all files into the file dest.
@@ -12,35 +26,37 @@ def merge(dest, files):
     e.g.
        ! model =  keycodes
     Where two sections have identical headers, the second header is skipped.
+
+    Special case are header-less files which we store with the empty string
+    as header, these need to get written out first.
     '''
 
-    sections = {}
-    section_names = []  # let's write out in the rough order of the Makefile.am
+    # pre-populate with the empty header so it's the first one to be written
+    # out. We use section_names to keep the same order as we get the files
+    # passed in (superfluous with python 3.6+ since the dict keeps the
+    # insertion order anyway).
+    sections = {'': []}
+    section_names = ['']
     for partsfile in files:
         # files may exist in srcdir or builddir, depending whether they're
         # generated
         path = partsfile[0] if os.path.exists(partsfile[0]) else partsfile[1]
 
-        with open(path) as fd:
-            header = fd.readline()
-            if header.startswith('! '):
-                # if we have a file that belongs to a section,
-                # keep it for later sorted writing
-                paths = sections.get(header, [])
-                paths.append(path)
-                sections[header] = paths
-                if header not in section_names:
-                    section_names.append(header)
-            else:
-                dest.write(header)
-                dest.write(fd.read())
+        header, path = handle_file(path)
+        paths = sections.get(header, [])
+        paths.append(path)
+        sections[header] = paths
+        if header not in section_names:
+            section_names.append(header)
 
     for header in section_names:
-        dest.write('\n')
-        dest.write(header)
+        if header:
+            dest.write('\n')
+            dest.write(header)
         for f in sections[header]:
             with open(f) as fd:
-                fd.readline()  # drop the header
+                if header:
+                    fd.readline()  # drop the header
                 dest.write(fd.read())
 
 
