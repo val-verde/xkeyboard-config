@@ -1,5 +1,8 @@
 SUBDIRS = compat
 
+rulesdir = $(xkb_base)/rules
+xmldir = $(rulesdir)
+
 if CREATE_RULES_SYMLINK
 #  extra_rules_file = $(xkb_rules_symlink)
 #  extra_dir_file   = $(extra_rules_file).xml 
@@ -107,6 +110,3 @@ EXTRA_DIST= $(xml_DATA) xfree98 \
             xml2lst.pl merge.py xkb.its $(dist_files)
 
 CLEANFILES = base base.lst evdev evdev.lst
-
-rulesdir = $(xkb_base)/rules
-xmldir = $(rulesdir)
