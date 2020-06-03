@@ -69,8 +69,8 @@ def merge(dest, files):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('rules file merge script')
     parser.add_argument('dest', type=str)
-    parser.add_argument('srcdir', type=str)
-    parser.add_argument('builddir', type=str)
+    parser.add_argument('--srcdir', type=str)
+    parser.add_argument('--builddir', type=str)
     parser.add_argument('files', nargs='+', type=str)
     ns = parser.parse_args()
 
@@ -81,6 +81,6 @@ if __name__ == '__main__':
 
         def file_tuple(f):
             '''A tuple of the given path with (builddir/f, srcdir/f)'''
-            return (os.path.join(ns.builddir, f), os.path.join(ns.srcdir, f))
+            return (os.path.join(ns.builddir or '.', f), os.path.join(ns.srcdir or '.', f))
 
         merge(fd, [file_tuple(f) for f in ns.files])
