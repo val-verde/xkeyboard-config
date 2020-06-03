@@ -87,11 +87,11 @@ SUFFIXES = .xml .lst
 
 base_parts=$(subst RULESET,base,$(parts))
 base: $(base_parts) merge.py
-	$(srcdir)/merge.py $@ --srcdir=$(srcdir) --builddir=$(builddir) $(base_parts)
+	$(srcdir)/merge.py --srcdir=$(srcdir) --builddir=$(builddir) $(base_parts) > $@
 
 evdev_parts=$(subst RULESET,evdev,$(parts))
 evdev: $(evdev_sources) merge.py
-	$(srcdir)/merge.py $@ --srcdir=$(srcdir) --builddir=$(builddir) $(evdev_parts)
+	$(srcdir)/merge.py --srcdir=$(srcdir) --builddir=$(builddir) $(evdev_parts) > $@
 
 dist_files = xkb.dtd README
 
