@@ -101,6 +101,9 @@ def write_layout_n_variant_n(dest, mappings, number, write_header):
 
 
 def map_variant(dest, files, want='mls', number=None):
+    if number == 0:
+        number = None
+
     for idx, f in enumerate(files):
         write_header = idx == 0
 
