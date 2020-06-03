@@ -10,16 +10,17 @@ dist_parts= \
     0032-l4v4_c.part
 
 scripts= \
+    0012-ml_s.part \
+    0014-ml1_s.part \
     0017-ml2_s.part \
     0019-ml3_s.part \
     0021-ml4_s.part \
+    0010-mlv_s.part \
+    0016-ml1v1_s.part \
     0023-ml2v2_s.part \
     0024-ml3v3_s.part \
     0025-ml4v4_s.part \
-    0012-ml_s.part \
-    0014-ml1_s.part \
-    0010-mlv_s.part \
-    0016-ml1v1_s.part
+    $(NULL)
 
 if USE_COMPAT_RULES
 
