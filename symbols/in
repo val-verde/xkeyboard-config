@@ -2326,7 +2326,7 @@ xkb_symbols "marathi" {
 	key <AB09> { [ period, U0964, U0965, U093d ] };
 	key <AB10> { [ U092f, question, slash, question ] };
 };
-=======
+
 // EXTRAS:
 
 //           Modi is an ancient Indian script that is used to write texts in Marathi, Hindi and Sanskrit.
