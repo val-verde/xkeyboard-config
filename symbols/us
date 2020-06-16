@@ -1999,11 +1999,11 @@ xkb_symbols "de_se_fi"  {
     name[Group1] = "German, Swedish and Finnish (US)";
 
     key <AC01> {[ a,            A,          adiaeresis, Adiaeresis ]};
-    key <AD09> {[ o,            O,          odiaeresis, Odiaeresis ]};
     key <AC02> {[ s,            S,          ssharp,     U1E9E      ]};
-    key <AD07> {[ u,            U,          udiaeresis, Udiaeresis ]};
-    key <AD10> {[ p,            P,          aring,      Aring      ]};
     key <AD01> {[ q,            Q,          at                     ]};
+    key <AD07> {[ u,            U,          udiaeresis, Udiaeresis ]};
+    key <AD09> {[ o,            O,          odiaeresis, Odiaeresis ]};
+    key <AD10> {[ p,            P,          aring,      Aring      ]};
     key <AD12> {[ bracketright, braceright, asciitilde             ]};
 
     include "level3(ralt_switch)"
