@@ -11,6 +11,12 @@ variables:
   # Override these in the jobs to pass commands to configure/make
   CONFIGURE_ARGS: ''
   MAKE_EXTRA_ARG: ''
+  FDO_UPSTREAM_REPO: 'xkeyboard-config/xkeyboard-config'
+
+stages:
+  - prep
+  - build
+  - test
 
 # We use arch because the image updates frequently and we're not stuck
 # forever in the update phase
@@ -41,6 +47,24 @@ variables:
     - meson configure "$BUILDDIR"
     - ninja -C "$BUILDDIR"
     - if test x"$NINJA_EXTRA_COMMAND" != "x"; then ninja -C "$BUILDDIR" $NINJA_EXTRA_COMMAND; fi
+
+#
+# Verify that the merge request has the allow-collaboration checkbox ticked
+#
+
+check-merge-request:
+  image: golang:alpine
+  stage: prep
+  before_script:
+    - apk add python3 py-pip git
+    - pip3 install git+http://gitlab.freedesktop.org/freedesktop/ci-templates
+  script:
+    - ci-fairy check-merge-request --require-allow-collaboration --junit-xml=results.xml
+  artifacts:
+    when: on_failure
+    reports:
+      junit: results.xml
+  allow_failure: true
 
 make_install:
   extends: .default_build
