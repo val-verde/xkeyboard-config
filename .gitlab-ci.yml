@@ -130,3 +130,18 @@ layout_tests:
     expire_in: 2 weeks
     paths:
     - $INSTDIR/xkeyboard-config-test.out
+
+keymap_tests:
+  extends: .default_setup
+  stage: test
+  script:
+    - pacman -S --noconfirm xorg-xkbcomp python-pytest
+    - export XKB_CONFIG_ROOT="$INSTDIR/share/X11/xkb"
+    - pytest --junitxml=results.xml
+  artifacts:
+    reports:
+      junit: results.xml
+  # use the installed tree from the make_install job
+  needs:
+    - job: make_install
+      artifacts: true
