@@ -798,7 +798,7 @@ xkb_symbols "us" {
     key <AD09> { [           o,          O, odiaeresis, Odiaeresis ] };
     key <AD11> { [ bracketleft,  braceleft, udiaeresis, Udiaeresis ] };
     key <AE03> { [           3, numbersign,    section,    section ] };
-    key <AE11> { [       minus, underscore,     ssharp,   question ] };
+    key <AE11> { [       minus, underscore,     ssharp,      U1E9E ] };
 
     include "level3(ralt_switch)"
 };
