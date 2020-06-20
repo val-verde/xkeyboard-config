@@ -209,7 +209,7 @@ xkb_symbols "bekl" {
   key <AE08> {[ 8,                 slash,             U0300,             U0301               ]};
   key <AE09> {[ 9,                 endash                                                    ]};
   key <AE10> {[ 0,                 numerosign                                                ]};
-  key <AE11> {[ minus,             dollar,            U2011,             EuroSign            ]};
+  key <AE11> {[ minus,             dollar,            U2011                                  ]};
   key <AE12> {[ period,            EuroSign                                                  ]};
 
   key <AD01> {[ comma,             U+02BC		  											 ]};
@@ -219,14 +219,14 @@ xkb_symbols "bekl" {
   key <AD05> {[ Cyrillic_sha,      Cyrillic_SHA                                              ]};
   key <AD06> {[ Cyrillic_shcha,    Cyrillic_SHCHA                                            ]};
   key <AD07> {[ Cyrillic_ka,       Cyrillic_KA,       copyright,         copyright           ]};
-  key <AD08> {[ Cyrillic_es,       Cyrillic_ES,       copyright,         copyright           ]};
+  key <AD08> {[ Cyrillic_es,       Cyrillic_ES                                               ]};
   key <AD09> {[ Cyrillic_de,       Cyrillic_DE                                               ]};
   key <AD10> {[ Cyrillic_ze,       Cyrillic_ZE                                               ]};
   key <AD11> {[ Cyrillic_tse,      Cyrillic_TSE                                              ]};
   key <AD12> {[ semicolon,         section                                                   ]};
 
   key <AC01> {[ Cyrillic_softsign, U045D,             Cyrillic_yeru,     Cyrillic_YERU       ]};
-  key <AC02> {[ Cyrillic_ya,       Cyrillic_YA,       U0463,             U0462               ]};
+  key <AC02> {[ Cyrillic_ya,       Cyrillic_YA,                                              ]};
   key <AC03> {[ Cyrillic_a,        Cyrillic_A                                                ]};
   key <AC04> {[ Cyrillic_o,        Cyrillic_O                                                ]};
   key <AC05> {[ Cyrillic_zhe,      Cyrillic_ZHE                                              ]};
@@ -241,8 +241,8 @@ xkb_symbols "bekl" {
   key <LSGT> {[ U045D,             U040D                                                     ]};
   key <AB01> {[ Cyrillic_yu,       Cyrillic_YU                                               ]};
   key <AB02> {[ Cyrillic_shorti,   Cyrillic_SHORTI,   U046D,             U046C               ]};
-  key <AB03> {[ Cyrillic_hardsign, Cyrillic_HARDSIGN						                 ]};
-  key <AB04> {[ U046B,             U046A	                                                 ]};
+  key <AB03> {[ Cyrillic_hardsign, Cyrillic_HARDSIGN, U046B,             U046A	             ]};
+  key <AB04> {[ U0463,             U0462	                                                 ]};
   key <AB05> {[ Cyrillic_ef,       Cyrillic_EF                                               ]};
   key <AB06> {[ Cyrillic_ha,       Cyrillic_HA                                               ]};
   key <AB07> {[ Cyrillic_pe,       Cyrillic_PE                                               ]};
