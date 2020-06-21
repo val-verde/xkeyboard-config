@@ -2274,7 +2274,7 @@ xkb_symbols "iipa" {
 // for typing Marathi language with some necessary symbols.
 
 xkb_symbols "marathi" {
-	name[Group1]="मराठी इन्स्क्रिप्ट";
+	name[Group1]="Marathi Inscript (Enhanced)";
 	key <TLDE> { [ U0962, U090C,   grave, asciitilde  ] }; // Added  ॢ & ऌ
 	key <AE01> { [ U0967, exclam,       1, exclam      ] }; // Added exclamation mark
 	key <AE02> { [ U0968, U0945,       2, at          ] }; // Added ॅ
