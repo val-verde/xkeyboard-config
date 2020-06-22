@@ -68,7 +68,7 @@ xkb_symbols "basic" {
 // ┃       ┃       ┃       ┃                                   ┃       ┃       ┃       ┃
 // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
 
-partial hidden alphanumeric_keys
+hidden partial alphanumeric_keys
 xkb_symbols "common" {
 
 	key <AB01> { [	U2282		] }; // Z: ⊂ -- Subset Of
@@ -376,12 +376,13 @@ xkb_symbols "aplx" {
 // add enclose underbar 2017-02-27
 // add alpha underbar 2019-03-22
 // add omega underbar 2019-03-22
+// change all "partial hidden" to "hidden partial" - seems to be a compiler change
 
 // The intention is that this keyboard layout overlays a base keyboard that provides 
 // the alphabet and similar. If this keyboard is placed as the 2nd layout then it can
 // be reached with a latching shift to increase group by one.
 
-partial hidden alphanumeric_keys
+hidden partial alphanumeric_keys
 xkb_symbols "dyalog_base" {
 
 // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━┓
@@ -452,7 +453,7 @@ xkb_symbols "dyalog_base" {
 	key <TLDE> { [ U22c4,		U233a	] };	// diamond, quad diamond
 };
 
-partial hidden keypad_keys
+hidden partial keypad_keys
 xkb_symbols "dyalog_box" {
 
 // ┌───┬───┬───┬───┐
@@ -481,7 +482,7 @@ xkb_symbols "dyalog_box" {
 
 }; 
 
-partial hidden
+hidden partial
 xkb_symbols "dyalog_codes" {
 
 //	Layout of private use area for this. In the style of the Unicode book
