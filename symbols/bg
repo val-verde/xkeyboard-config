@@ -212,7 +212,7 @@ xkb_symbols "bekl" {
   key <AE11> {[ minus,             dollar,            U2011                                  ]};
   key <AE12> {[ period,            EuroSign                                                  ]};
 
-  key <AD01> {[ comma,             U+02BC		  											 ]};
+  key <AD01> {[ comma,             U02BC		  											 ]};
   key <AD02> {[ Cyrillic_u,        Cyrillic_U                                                ]};
   key <AD03> {[ Cyrillic_ie,       Cyrillic_IE,       Cyrillic_e,        Cyrillic_E          ]};
   key <AD04> {[ Cyrillic_i,        Cyrillic_I,        U045D,             U040D               ]};
