@@ -200,7 +200,7 @@ xkb_symbols "bekl" {
 
   key <TLDE> {[ parenleft,         parenright,        bracketleft,       bracketright        ]};
   key <AE01> {[ 1,                 exclam                                                    ]};
-  key <AE02> {[ 2,                 question,          at,				 at                  ]};
+  key <AE02> {[ 2,                 question,          U0040,             U0040               ]};
   key <AE03> {[ 3,                 plus,              dagger,            dagger              ]};
   key <AE04> {[ 4,                 quotedbl                                                  ]};
   key <AE05> {[ 5,                 percent,           U2329,             U232A               ]};
@@ -209,7 +209,7 @@ xkb_symbols "bekl" {
   key <AE08> {[ 8,                 slash,             U0300,             U0301               ]};
   key <AE09> {[ 9,                 endash                                                    ]};
   key <AE10> {[ 0,                 numerosign                                                ]};
-  key <AE11> {[ minus,             dollar,            U2011                                  ]};
+  key <AE11> {[ minus,             dollar,            U2011,             EuroSign            ]};
   key <AE12> {[ period,            EuroSign                                                  ]};
 
   key <AD01> {[ comma,             U02BC		  											 ]};
