@@ -2432,6 +2432,12 @@
             <description>Bulgarian (new phonetic)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>bekl</name>
+            <description>Bulgarian (enhanced)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
