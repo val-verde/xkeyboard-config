@@ -14,9 +14,9 @@ variables:
   FDO_UPSTREAM_REPO: 'xkeyboard-config/xkeyboard-config'
 
 stages:
-  - prep
   - build
   - test
+  - gitlab
 
 # We use arch because the image updates frequently and we're not stuck
 # forever in the update phase
@@ -54,7 +54,7 @@ stages:
 
 check-merge-request:
   image: golang:alpine
-  stage: prep
+  stage: gitlab
   before_script:
     - apk add python3 py-pip git
     - pip3 install git+http://gitlab.freedesktop.org/freedesktop/ci-templates
