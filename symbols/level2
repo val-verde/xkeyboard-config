@@ -7,5 +7,4 @@ xkb_symbols "lsgt_switch" {
     type[Group1]="ONE_LEVEL",
     symbols[Group1] = [ Shift_L ]
   };
-  include "level3(modifier_mapping)"
 };
