@@ -221,6 +221,8 @@ xkb_symbols "evdev" {
     key <I372>  {       [ XF86Favorites          ]       };
     key <I380>  {       [ XF86FullScreen         ]       };
     key <I382>  {       [ XF86Keyboard           ]       };
+    key <I442>  {       [ dollar                 ]       };
+    key <I443>  {       [ EuroSign               ]       };
     key <I569>  {       [ XF86RotationLockToggle ]       };
 
     key <FK13>   {      [ XF86Tools         ]       };
