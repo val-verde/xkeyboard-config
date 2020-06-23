@@ -145,7 +145,8 @@ layout_tests:
     - meson builddir -Denable-wayland=false -Denable-x11=false -Denable-docs=false -Dxkb-config-root="$INSTDIR/share/X11/xkb"
     - ninja -C builddir
     - echo Running test script - this will take several minutes
-    - ./builddir/xkeyboard-config-test > $INSTDIR/xkeyboard-config-test.out
+    - ./builddir/xkeyboard-config-test "$INSTDIR/share/X11/xkb/rules/evdev.xml" > $INSTDIR/xkeyboard-config-test.out
+    - ./builddir/xkeyboard-config-test "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" >> $INSTDIR/xkeyboard-config-test.out
     - popd > /dev/null
   variables:
     GIT_STRATEGY: none
