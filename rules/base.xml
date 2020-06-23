@@ -6656,6 +6656,19 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
+      <!-- The key combination used to choose the 2rd level of symbols -->
+      <configItem>
+        <name>lv2</name>
+        <description>Key to choose the 2rd level</description>
+      </configItem>
+      <option>
+        <configItem>
+          <name>lv2:lsgt_switch</name>
+          <description>The "&lt; &gt;" key</description>
+        </configItem>
+      </option>
+    </group>
+    <group allowMultipleSelection="true">
       <!-- The key combination used to choose the 3rd (and 4th, together with Shift)
            level of symbols -->
       <configItem>
