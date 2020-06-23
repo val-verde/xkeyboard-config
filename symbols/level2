@@ -1,4 +1,4 @@
-// These partial variants add Shift to various XKB keycodes.
+// These partial variants assign Shift to various XKB keycodes.
 
 // The Less/Greater key (while pressed) chooses the second shift level.
 partial modifier_keys
