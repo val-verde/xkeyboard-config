@@ -101,15 +101,6 @@
       <variantList>
         <variant>
           <configItem popularity="exotic">
-            <name>us</name>
-            <description>German (US)</description>
-            <languageList>
-              <iso639Id>eng</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem popularity="exotic">
             <name>hu</name>
             <description>German (with Hungarian letters, no dead keys)</description>
             <languageList>

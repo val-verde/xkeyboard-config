@@ -3633,6 +3633,12 @@
         </variant>
         <variant>
           <configItem>
+            <name>us</name>
+            <description>German (US)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>ro</name>
             <description>Romanian (Germany)</description>
             <languageList>
