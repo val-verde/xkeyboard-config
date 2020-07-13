@@ -890,27 +890,32 @@ xkb_symbols "tr" {
 
 };
 
-// EXTRAS:
-
 partial alphanumeric_keys
 xkb_symbols "us" {
     include "us"
 
     name[Group1]="German (US)";
 
+    key <AE03> { [           3, numbersign,    section,     degree ] };
+    key <AE11> { [       minus, underscore,     ssharp,      U1E9E ] };
+
+    key <AD03> { [           e,          E,   EuroSign,       cent ] };
+    key <AD07> { [           u,          U, udiaeresis, Udiaeresis ] };
+    key <AD09> { [           o,          O, odiaeresis, Odiaeresis ] };
+    key <AD11> { [ bracketleft,  braceleft, udiaeresis, Udiaeresis ] };
+ 
     key <AC01> { [           a,          A, adiaeresis, Adiaeresis ] };
     key <AC02> { [           s,          S,     ssharp,      U1E9E ] };
     key <AC10> { [   semicolon,      colon, odiaeresis, Odiaeresis ] };
     key <AC11> { [  apostrophe,   quotedbl, adiaeresis, Adiaeresis ] };
-    key <AD03> { [           e,          E,   EuroSign,   EuroSign ] };
-    key <AD07> { [           u,          U, udiaeresis, Udiaeresis ] };
-    key <AD09> { [           o,          O, odiaeresis, Odiaeresis ] };
-    key <AD11> { [ bracketleft,  braceleft, udiaeresis, Udiaeresis ] };
-    key <AE03> { [           3, numbersign,    section,    section ] };
-    key <AE11> { [       minus, underscore,     ssharp,      U1E9E ] };
-
+    
+    key <AB03> { [           c,          C,  Multi_key,  Multi_key ] };
+    key <AB07> { [           m,          M, dead_greek,       Menu ] };
+    
     include "level3(ralt_switch)"
 };
+
+// EXTRAS:
 
 partial alphanumeric_keys
 xkb_symbols "hu" {
