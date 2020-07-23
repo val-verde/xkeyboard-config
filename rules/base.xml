@@ -1446,6 +1446,12 @@
         </variant>
         <variant>
           <configItem>
+            <name>symbolic</name>
+            <description>English (US, Symbolic)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>rus</name>
             <!-- Keyboard indicator for Russian layouts -->
             <shortDescription>ru</shortDescription>
