@@ -3633,6 +3633,18 @@
         </variant>
         <variant>
           <configItem>
+            <name>E1</name>
+            <description>German (E1)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>E2</name>
+            <description>German (E2)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>T3</name>
             <description>German (T3)</description>
           </configItem>
