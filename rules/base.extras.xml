@@ -1047,15 +1047,6 @@
             <description>Portuguese (Sun Type 6/7)</description>
           </configItem>
         </variant>
-      </variantList>
-    </layout>
-    <layout>
-      <configItem popularity="exotic">
-        <name>pt</name>
-        <shortDescription>pt</shortDescription>
-        <description>Portuguese</description>
-      </configItem>
-      <variantList>
         <variant>
           <configItem popularity="exotic">
             <name>colemak</name>
