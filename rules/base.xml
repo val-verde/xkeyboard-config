@@ -3622,13 +3622,13 @@
         </variant>
         <variant>
           <configItem>
-            <name>E1</name>
+            <name>e1</name>
             <description>German (E1)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>E2</name>
+            <name>e2</name>
             <description>German (E2)</description>
           </configItem>
         </variant>
