@@ -1164,6 +1164,12 @@
             <description>Turkish (Sun Type 6/7)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>otk</name>
+            <description>Old Turkic</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
