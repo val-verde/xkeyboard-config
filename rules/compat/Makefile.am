@@ -24,11 +24,11 @@ scripts= \
 
 if USE_COMPAT_RULES
 
-noinst_SCRIPTS=$(scripts) $(dist_parts)
+BUILT_SOURCES=$(scripts) $(dist_parts)
 
 else
 
-noinst_SCRIPTS=
+BUILT_SOURCES=
 
 endif
 
