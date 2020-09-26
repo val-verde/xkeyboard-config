@@ -856,10 +856,10 @@ xkb_symbols "pl" {
     // https://github.com/kontextify/xkeyboard-config
 
     include "latin(type4)"
- 
+    include "de(nodeadkeys)"
+
     name[Group1]= "Polish (Germany, no dead keys)";
 
-    include "de(nodeadkeys)"
     key <AE04>	{ [         4,     dollar,   EuroSign,     currency ]	};
 
     key <AD01>  { [         q,          Q ] };
