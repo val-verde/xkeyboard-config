@@ -197,7 +197,6 @@ xkb_symbols "Sundeadkeys" {
     // Use the Sun dead keys
 
     include "be(sundeadkeys)"
-
 };
 
 partial alphanumeric_keys

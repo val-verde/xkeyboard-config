@@ -303,7 +303,6 @@ partial alphanumeric_keys
     key <BKSL>	{ [    ugrave,    section,   dead_grave,   dead_breve ]	};
 
     key <LSGT>	{ [      less,    greater,guillemotleft,guillemotright] };
-
 };
 
 // EXTRAS:
@@ -325,7 +324,6 @@ partial alphanumeric_keys
     key <AC02> { [ s, S, sacute, Sacute ] };
 
     key <AB03> { [ c, C, cacute, Cacute ] };
-
 };
 
 partial alphanumeric_keys

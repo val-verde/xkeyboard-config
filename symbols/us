@@ -1592,7 +1592,6 @@ xkb_symbols "symbolic" {
  key <LSGT> { [ U230A,     U230B, U2308, U2309      ] }; // ⌊ ⌋ ⌈ ⌉
 
  include "level3(ralt_switch)"
-
 };
 
 // EXTRAS:
@@ -1732,7 +1731,6 @@ xkb_symbols "alt-intl-unicode" {
 
  // belowdot, abovedot (caron at coma/less key, per above)
  key <AB09> { [ period, greater, U0323, U0307 ] };
-
 };
 
 partial alphanumeric_keys

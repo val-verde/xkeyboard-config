@@ -55,5 +55,4 @@ xkb_symbols "basic" {
     key <AB10> { [ U2C8F, U2C8E ] };
 
     key <BKSL> { [ U0304, U0323 ] };
-
 };

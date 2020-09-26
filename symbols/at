@@ -31,4 +31,3 @@ xkb_symbols "sundeadkeys" {
 
     name[Group1]="German (Austria, Sun dead keys)";
 };
-

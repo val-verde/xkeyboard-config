@@ -232,8 +232,7 @@ xkb_symbols "pl" {
     key <AB02>  { [         x,          X,       zacute,       Zacute ] };
     key <AB03>  { [         c,          C,       cacute,       Cacute ] };
     key <AB06>  { [         n,          N,       nacute,       Nacute ] };
-    
-    
+
     include "level3(ralt_switch)"
 };
 

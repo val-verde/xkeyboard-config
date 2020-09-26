@@ -59,7 +59,6 @@ xkb_symbols "azerty-deadkeys" {
     		  // dead-below dot for ḍ,ṭ,ẓ,ḥ and dead-caron for č and ǧ  
 
     include "level3(ralt_switch)"
-
 };
 
 partial alphanumeric_keys
@@ -97,7 +96,6 @@ xkb_symbols "qwerty-us-deadkeys" {
 
     include "level3(ralt_switch)"
 };
-
 
 
 //

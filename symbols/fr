@@ -1062,7 +1062,6 @@ xkb_symbols "geo" {
     key <AB08> { [ Georgian_shin,  S              ] };
     key <AB09> { [ Georgian_ghan,  noSymbol       ] };
     key <AB10> { [ Georgian_char,  noSymbol       ] };
-
 };
 
 // US keyboard made French
@@ -1219,7 +1218,6 @@ xkb_symbols "us-alt" {
     key <TLDE> { [dead_grave, asciitilde,         grave ] };
     key <AE06> { [dead_circumflex, asciicircum,       6 ] };
     key <AE04> { [         4,     dollar,      EuroSign,         currency ] }; // € ¤
-
 };
 
 // For physically modified US keyboard (Q <-> A, W <-> Z and ; <-> M)

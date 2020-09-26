@@ -39,7 +39,6 @@ xkb_symbols "nodeadkeys" {
     key <BKSL>	{ [apostrophe,   asterisk,  doubleacute,     multiply ]	};
     key <AB08>	{ [     comma,  semicolon,      cedilla,       ogonek ]	};
     key <AB09>	{ [    period,      colon, periodcentered,   abovedot ]	};
-
 };
 
 partial alphanumeric_keys

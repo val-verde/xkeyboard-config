@@ -2267,7 +2267,6 @@ xkb_symbols "iipa" {
     key <AB08>	{ [	comma,		U0282]	}; // [ʂ]
     key <AB09>	{ [	period,		U02D0]	}; // [ː] Long sound
     key <AB10>	{ [	j,			slash] }; // [j]
-
 };
 
 // This layout is developed by Niranjan Tambe in July 2019

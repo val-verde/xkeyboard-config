@@ -105,7 +105,6 @@ xkb_symbols "plisi" {
  key <BKSL> { [ backslash, bar, U031B ] };
 
  include "level3(ralt_switch)"
-
 };
 
 // EXTRAS:
