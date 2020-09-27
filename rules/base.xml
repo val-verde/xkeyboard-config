@@ -2295,21 +2295,18 @@
         <variant>
           <configItem>
             <name>iipa</name>
-            <shortDescription>iipa</shortDescription>
-            <description>Indic IPA (IIPA)</description>
+            <description>Indic (phonetic, IPA)</description>
             <languageList>
-              <iso639Id>eng</iso639Id>
+              <iso639Id>inc</iso639Id>
             </languageList>
           </configItem>
         </variant>
-
         <variant>
           <configItem>
             <name>marathi</name>
-            <shortDescription>ins</shortDescription>
-            <description>मराठी इन्स्क्रिप्ट</description>
+            <description>Marathi (enhanced Inscript)</description>
             <languageList>
-              <iso639Id>eng</iso639Id>
+              <iso639Id>mar</iso639Id>
             </languageList>
           </configItem>
         </variant>

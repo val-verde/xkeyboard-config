@@ -199,7 +199,6 @@
     <layout>
       <configItem popularity="exotic">
         <name>eg</name>
-        <shortDescription>ⲕⲏⲙⲉ</shortDescription>
         <description>Coptic</description>
         <languageList>
           <iso639Id>cop</iso639Id>

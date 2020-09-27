@@ -2216,7 +2216,7 @@ xkb_symbols "eeyek" {
 partial alphanumeric_keys modifier_keys
 xkb_symbols "iipa" {
 
-    name[Group1]= "Indic IPA (IIPA)";
+    name[Group1]= "Indic (phonetic, IPA)";
     key <AE01>	{ [	1,		exclam]	};
     key <AE02>	{ [	2,		at]	};
     key <AE03>	{ [	3,		numbersign]	};
@@ -2274,7 +2274,7 @@ xkb_symbols "iipa" {
 // for typing Marathi language with some necessary symbols.
 
 xkb_symbols "marathi" {
-	name[Group1]="Marathi Inscript (Enhanced)";
+	name[Group1]="Marathi (enhanced Inscript)";
 	key <TLDE> { [ U0962, U090C,   grave, asciitilde  ] }; // Added  ॢ & ऌ
 	key <AE01> { [ U0967, exclam,       1, exclam      ] }; // Added exclamation mark
 	key <AE02> { [ U0968, U0945,       2, at          ] }; // Added ॅ
