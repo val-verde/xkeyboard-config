@@ -637,12 +637,12 @@ xkb_symbols "oldhun_magic_numpad" {
 //Old Hungarian number hundred
     key <KP6> {[ KP_Right, KP_6, U10CFF, U10CFF ]};
 //Old Hungarian number thousand
-    key <KP1> {[ KP_End, KP_1, U200E, U200E ]};
-//Left-to-right mark
+    key <KP1> {[ KP_End, KP_1, U200F, U200F ]};
+//Right-to-left mark
     key <KP2> {[ KP_Down, KP_2, U200D, U200D ]};
 //Zero-width-joiner
-    key <KP3> {[ KP_Next, KP_3, U200F, U200F ]};
-//Right-to-left mark
+    key <KP3> {[ KP_Next, KP_3, U200E, U200E ]};
+//Left-to-right mark
     key <KPEN> {[ KP_Enter, KP_Enter, KP_Enter, KP_Enter ]};
     key <KPEQ> {[ KP_Equal, KP_Equal, KP_Equal, KP_Equal ]};
     key <KPDL> {[ KP_Delete, KP_Separator, KP_Delete, KP_Separator ]};
