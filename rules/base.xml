@@ -6657,10 +6657,10 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
-      <!-- The key combination used to choose the 2rd level of symbols -->
+      <!-- The key combination used to choose the 2nd level of symbols -->
       <configItem>
         <name>lv2</name>
-        <description>Key to choose the 2rd level</description>
+        <description>Key to choose the 2nd level</description>
       </configItem>
       <option>
         <configItem>
