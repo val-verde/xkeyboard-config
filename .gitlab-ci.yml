@@ -15,6 +15,7 @@ variables:
 
 stages:
   - build
+  - dist
   - test
   - gitlab
 
@@ -43,6 +44,11 @@ stages:
 .meson_build:
   extends: .default_setup
   script:
+    - if [ x"$TARBALL" != "x" ]; then
+        mkdir tarball;
+        tar xf "$BUILDDIR/$TARBALL" -C tarball/ --strip-components=1;
+        pushd tarball > /dev/null;
+      fi
     - meson "$BUILDDIR" -Dprefix="$INSTDIR"
     - meson configure "$BUILDDIR"
     - ninja -C "$BUILDDIR"
@@ -90,7 +96,13 @@ make_distcheck:
   extends: .default_build
   stage: build
   variables:
-      MAKE_EXTRA_COMMAND: "distcheck"
+      # pass VERSION to make so our tarball has a fixed name.
+      MAKE_EXTRA_COMMAND: "VERSION=master distcheck"
+  artifacts:
+    name: tarball
+    expire_in: 20 min
+    paths:
+      - $BUILDDIR/xkeyboard-config-master.tar.bz2
 
 meson_build:
   extends: .meson_build
@@ -117,6 +129,15 @@ meston_dist:
   stage: build
   variables:
       NINJA_EXTRA_COMMAND: "dist"
+
+meson_from_tarball:
+  extends: .meson_build
+  stage: dist
+  dependencies:
+    - make_distcheck
+  variables:
+    TARBALL: "xkeyboard-config-master.tar.bz2"
+    GIT_STRATEGY: none
 
 xmllint:
   image: archlinux/base
