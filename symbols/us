@@ -1969,7 +1969,7 @@ xkb_symbols "drix" {
 	// Second row
 	key <AD01> {[ q,           Q,              oslash,               Ooblique              ]}; // q Q ø Ø
 	key <AD02> {[ w,           W,              w,                    uparrow               ]}; // w W w ↑
-	key <AD03> {[ e,           E,              EuroSign,             EuroS                 ]}; // e E € €
+	key <AD03> {[ e,           E,              EuroSign,             EuroSign              ]}; // e E € €
 	key <AD04> {[ r,           R,              registered,           0x10020bd             ]}; // r R ® ₽
 	key <AD05> {[ t,           T,              trademark,            Greek_tau             ]}; // t T ™ τ
 	key <AD06> {[ y,           Y,              yen,                  yen                   ]}; // y Y ¥ ¥
