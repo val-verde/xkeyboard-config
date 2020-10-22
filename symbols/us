@@ -84,7 +84,6 @@ xkb_symbols "ibm238l" {
 partial alphanumeric_keys
 xkb_symbols "intl" {
 
-    include "us(basic)"
     name[Group1]= "English (US, intl., with dead keys)";
 
     key <TLDE> { [dead_grave, dead_tilde,         grave,       asciitilde ] };
@@ -122,7 +121,6 @@ xkb_symbols "intl" {
     key <AC06> { [	   h,          H,             h,                H ] };
     key <AC07> { [	   j,          J,             j,                J ] };
     key <AC08> { [	   k,          K,            oe,               OE ] };
-
     key <AC09> { [	   l,          L,        oslash,         Ooblique ] };
     key <AC10> { [ semicolon,      colon,     paragraph,           degree ] };
     key <AC11> { [dead_acute, dead_diaeresis, apostrophe,        quotedbl ] };
@@ -673,8 +671,8 @@ key.type[group1]="FOUR_LEVEL_ALPHABETIC";
 partial alphanumeric_keys
 xkb_symbols "mac" {
 
-    include "us(basic)"
     name[Group1]= "English (Macintosh)";
+
     key.type[group1]="FOUR_LEVEL";
 
     // Slightly improvised from http://homepage.mac.com/thgewecke/kblayout.jpg
@@ -715,7 +713,6 @@ xkb_symbols "mac" {
     key <AC06> { [	   h,          H, dead_abovedot,    dead_belowdot ] };
     key <AC07> { [	   j,          J,         U2206,          onehalf ] };
     key <AC08> { [	   k,          K,dead_abovering,            UF8FF ] };
-
     key <AC09> { [	   l,          L,       notsign,            THORN ] };
     key <AC10> { [ semicolon,      colon,         U2026,            thorn ] };
     key <AC11> { [apostrophe,   quotedbl,            ae,               AE ] };
@@ -741,7 +738,6 @@ xkb_symbols "mac" {
 partial alphanumeric_keys
 xkb_symbols "colemak" {
 
-    include "us"
     name[Group1]= "English (Colemak)";
 
     key <TLDE> { [        grave,   asciitilde,      dead_tilde,       asciitilde ] };
@@ -1395,7 +1391,6 @@ xkb_symbols "carpalx" {
 partial alphanumeric_keys
 xkb_symbols "carpalx-intl" {
 
-    include "us(carpalx)"
     name[Group1]= "English (Carpalx, intl., with dead keys)";
 
     key <TLDE> { [dead_grave, dead_tilde,         grave,       asciitilde ] };
