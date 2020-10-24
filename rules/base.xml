@@ -4741,20 +4741,8 @@
       <variantList>
         <variant>
           <configItem>
-            <name>cedilla</name>
-            <description>Romanian (cedilla)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>std</name>
             <description>Romanian (standard)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>std_cedilla</name>
-            <description>Romanian (standard cedilla)</description>
           </configItem>
         </variant>
         <variant>
