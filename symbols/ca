@@ -261,10 +261,7 @@ xkb_symbols "multi-2gr" {
     key <AB10>	{ [ NoSymbol, dead_abovedot ]	};
 };
 
-// based on
-// Inuktitut keyboard for X11
-// written by Pablo Saratxaga <pablo@mandrakesoft.com>
-
+// Inuktitut keyboard layout, by Pablo Saratxaga <pablo@mandrakesoft.com>.
 alphanumeric_keys
 xkb_symbols "ike" {
 
