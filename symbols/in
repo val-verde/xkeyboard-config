@@ -2334,7 +2334,7 @@ xkb_symbols "marathi" {
 // Date : 27th October, 2020
 partial alphanumeric_keys
 xkb_symbols "san-misc" {
-     name[Group1] = "Sanskrit (Vedic & Misc. symbols)";
+     name[Group1] = "Sanskrit symbols";
      key.type="FOUR_LEVEL";
 
     // Roman digits
