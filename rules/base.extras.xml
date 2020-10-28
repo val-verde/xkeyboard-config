@@ -1304,7 +1304,7 @@
           <configItem>
             <name>san-misc</name>
             <shortDescription>sas</shortDescription>
-            <description>Sanskrit (Vedic & Misc. symbols)</description>
+            <description>Sanskrit symbols</description>
             <languageList>
               <iso639Id>san</iso639Id>
             </languageList>
