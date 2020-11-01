@@ -132,13 +132,13 @@ xkb_symbols "oss_latin9" {
     key <AB10>  { [            equal,             plus,           dead_tilde,                 minus ] }; // = + ~ -
 };
 
-
 partial alphanumeric_keys
-xkb_symbols "oss_Sundeadkeys" {
+xkb_symbols "oss_sundeadkeys" {
 
     // Modifies the basic be(oss) layout to use the Sun dead keys
 
     include "be(oss)"
+    name[Group1]="Belgian (Sun dead keys, alt.)";
 
     // First row
     key <AE04>	{ [       apostrophe,                4,        dead_cedilla,             0x1002014 ] }; // ' 4 ¸ — (tiret cadratin)
@@ -152,14 +152,6 @@ xkb_symbols "oss_Sundeadkeys" {
 
     // Fourth row
     key <AB10>  { [            equal,             plus,          dead_tilde,             0x1002212 ] }; // = + ~ −
-};
-
-partial alphanumeric_keys
-xkb_symbols "oss_sundeadkeys" {
-
-    include "be(oss_Sundeadkeys)"
-
-    name[Group1]="Belgian (Sun dead keys, alt.)";
 };
 
 
@@ -189,14 +181,6 @@ xkb_symbols "sundeadkeys" {
     key <BKSL>	{ [        mu,   sterling,  dead_grave,  dead_grave ]	};
     key <AB07>	{ [     comma,  question, dead_cedilla, dead_cedilla]	};
     key <AB10>	{ [     equal,       plus,  dead_tilde,  dead_tilde ]	};
-};
-
-partial alphanumeric_keys
-xkb_symbols "Sundeadkeys" {
-
-    // Use the Sun dead keys
-
-    include "be(sundeadkeys)"
 };
 
 partial alphanumeric_keys
