@@ -1734,12 +1734,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>sundeadkeys</name>
-            <description>German (Austria, Sun dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>mac</name>
             <description>German (Austria, Macintosh)</description>
           </configItem>
@@ -3041,12 +3035,6 @@
       <variantList>
         <variant>
           <configItem>
-            <name>sundeadkeys</name>
-            <description>Dutch (Sun dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>mac</name>
             <description>Dutch (Macintosh)</description>
           </configItem>
@@ -3649,12 +3637,6 @@
           <configItem>
             <name>dvorak</name>
             <description>German (Dvorak)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>sundeadkeys</name>
-            <description>German (Sun dead keys)</description>
           </configItem>
         </variant>
         <variant>
@@ -5461,12 +5443,6 @@
           <configItem>
             <name>alt</name>
             <description>Turkish (Alt-Q)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>sundeadkeys</name>
-            <description>Turkish (Sun dead keys)</description>
           </configItem>
         </variant>
         <variant>

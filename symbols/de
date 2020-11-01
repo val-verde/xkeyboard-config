@@ -382,12 +382,6 @@ xkb_symbols "dvorak" {
     include "level3(ralt_switch)"
 };
 
-partial alphanumeric_keys
-xkb_symbols "sundeadkeys" {
-    include "de(basic)"
-    name[Group1]="German (Sun dead keys)";
-};
-
 
 // German Neo-Layout Version 2
 // adopted 2004 by Hanno Behrens <Hanno.Behrens@gmx.de>

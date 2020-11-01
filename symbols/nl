@@ -114,12 +114,6 @@ xkb_symbols "std" {
 };
 
 
-partial alphanumeric_keys
-xkb_symbols "sundeadkeys" {
-    include "nl(basic)"
-    name[Group1]="Dutch (Sun dead keys)";
-};
-
 // Copied from macintosh_vndr/nl
 partial alphanumeric_keys
 xkb_symbols "mac" {
