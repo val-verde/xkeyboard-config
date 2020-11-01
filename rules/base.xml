@@ -1330,20 +1330,6 @@
        <vendor>Google</vendor>
      </configItem>
     </model>
-    <model>
-      <configItem>
-       <name>teck227</name>
-       <description>Truly Ergonomic Computer Keyboard Model 227 (Wide Alt keys)</description>
-       <vendor>Megawin Technology</vendor>
-     </configItem>
-    </model>
-    <model>
-      <configItem>
-       <name>teck229</name>
-       <description>Truly Ergonomic Computer Keyboard Model 229 (Standard sized Alt keys, additional Super and Menu key)</description>
-       <vendor>Megawin Technology</vendor>
-     </configItem>
-    </model>
   </modelList>
   <layoutList>
     <layout>
