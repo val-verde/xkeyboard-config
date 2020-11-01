@@ -2275,7 +2275,7 @@
         <variant>
           <configItem>
             <name>iipa</name>
-            <description>Indic (phonetic, IPA)</description>
+            <description>Indic IPA</description>
             <languageList>
               <iso639Id>inc</iso639Id>
             </languageList>
@@ -2284,7 +2284,7 @@
         <variant>
           <configItem>
             <name>marathi</name>
-            <description>Marathi (enhanced Inscript)</description>
+            <description>मराठी इन्स्क्रिप्ट</description>
             <languageList>
               <iso639Id>mar</iso639Id>
             </languageList>

@@ -2212,11 +2212,12 @@ xkb_symbols "eeyek" {
 
 // This layout is developed by Niranjan Tambe in July 2019
 // for typing Indic languages in International Phonetic Alphabet (IPA).
+// Contact - niranjanvikastambe@gmail.com
 
 partial alphanumeric_keys modifier_keys
 xkb_symbols "iipa" {
 
-    name[Group1]= "Indic (phonetic, IPA)";
+    name[Group1]= "Indic IPA";
     key <AE01>	{ [	1,		exclam]	};
     key <AE02>	{ [	2,		at]	};
     key <AE03>	{ [	3,		numbersign]	};
@@ -2271,6 +2272,7 @@ xkb_symbols "iipa" {
 
 // This layout is developed by Niranjan Tambe in July 2019
 // for typing Marathi language with some necessary symbols.
+// Contact - niranjanvikastambe@gmail.com
 
 xkb_symbols "marathi" {
 	name[Group1]="Marathi (enhanced Inscript)";
