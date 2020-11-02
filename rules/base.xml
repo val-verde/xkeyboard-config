@@ -2284,7 +2284,7 @@
         <variant>
           <configItem>
             <name>marathi</name>
-            <description>मराठी इन्स्क्रिप्ट</description>
+            <description>Marathi (enhanced Inscript)</description>
             <languageList>
               <iso639Id>mar</iso639Id>
             </languageList>
