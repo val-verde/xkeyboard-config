@@ -105,7 +105,7 @@ make_install:
     - tree $INSTDIR
   artifacts:
     name: installed files
-    expire_in: 20 min
+    expire_in: 2 weeks
     paths:
       - $INSTDIR/
 
@@ -123,7 +123,7 @@ make_distcheck:
       MAKE_EXTRA_COMMAND: "VERSION=master distcheck"
   artifacts:
     name: tarball
-    expire_in: 20 min
+    expire_in: 2 weeks
     paths:
       - $BUILDDIR/xkeyboard-config-master.tar.bz2
 
@@ -136,7 +136,7 @@ meson_build:
     - tree $INSTDIR
   artifacts:
     name: installed files
-    expire_in: 20 min
+    expire_in: 2 weeks
     paths:
       - $INSTDIR/
 
