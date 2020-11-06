@@ -3508,11 +3508,9 @@
     <layout>
       <configItem>
         <name>gn</name>
-        <!-- Keyboard indicator for French layouts -->
-        <shortDescription>fr</shortDescription>
-        <description>French (Guinea)</description>
+        <description>N'Ko (azerty)</description>
         <languageList>
-          <iso639Id>fra</iso639Id>
+          <iso639Id>nqo</iso639Id>
         </languageList>
       </configItem>
       <variantList/>
