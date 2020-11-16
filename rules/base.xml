@@ -4637,12 +4637,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>sundeadkeys</name>
-            <description>Portuguese (Sun dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>mac</name>
             <description>Portuguese (Macintosh)</description>
           </configItem>
@@ -4651,12 +4645,6 @@
           <configItem>
             <name>mac_nodeadkeys</name>
             <description>Portuguese (Macintosh, no dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>mac_sundeadkeys</name>
-            <description>Portuguese (Macintosh, Sun dead keys)</description>
           </configItem>
         </variant>
         <variant>
