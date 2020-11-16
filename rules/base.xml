@@ -3294,12 +3294,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>sundeadkeys</name>
-            <description>French (Sun dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>oss</name>
             <description>French (alt.)</description>
           </configItem>
@@ -3318,12 +3312,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>oss_sundeadkeys</name>
-            <description>French (alt., Sun dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>latin9</name>
             <description>French (legacy, alt.)</description>
           </configItem>
@@ -3332,12 +3320,6 @@
           <configItem>
             <name>latin9_nodeadkeys</name>
             <description>French (legacy, alt., no dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>latin9_sundeadkeys</name>
-            <description>French (legacy, alt., Sun dead keys)</description>
           </configItem>
         </variant>
         <variant>
