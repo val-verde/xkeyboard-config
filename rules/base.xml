@@ -4217,12 +4217,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>sundeadkeys</name>
-            <description>Spanish (Latin American, Sun dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>dvorak</name>
             <description>Spanish (Latin American, Dvorak)</description>
           </configItem>
