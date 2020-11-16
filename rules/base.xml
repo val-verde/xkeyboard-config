@@ -5159,14 +5159,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>de_sundeadkeys</name>
-            <!-- Keyboard indicator for German layouts -->
-            <shortDescription>de</shortDescription>
-            <description>German (Switzerland, Sun dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>fr</name>
             <!-- Keyboard indicator for French layouts -->
             <shortDescription>fr</shortDescription>
@@ -5182,17 +5174,6 @@
             <!-- Keyboard indicator for French layouts -->
             <shortDescription>fr</shortDescription>
             <description>French (Switzerland, no dead keys)</description>
-            <languageList>
-              <iso639Id>fra</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>fr_sundeadkeys</name>
-            <!-- Keyboard indicator for French layouts -->
-            <shortDescription>fr</shortDescription>
-            <description>French (Switzerland, Sun dead keys)</description>
             <languageList>
               <iso639Id>fra</iso639Id>
             </languageList>
