@@ -1834,12 +1834,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>oss_sundeadkeys</name>
-            <description>Belgian (Sun dead keys, alt.)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>iso-alternate</name>
             <description>Belgian (ISO, alt.)</description>
           </configItem>
