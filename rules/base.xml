@@ -1846,12 +1846,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>sundeadkeys</name>
-            <description>Belgian (Sun dead keys)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>wang</name>
             <description>Belgian (Wang 724 AZERTY)</description>
           </configItem>
