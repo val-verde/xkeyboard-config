@@ -7327,6 +7327,12 @@
       </option>
       <option>
         <configItem>
+          <name>lv5:menu_switch</name>
+          <description>Menu chooses 5th level</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>lv5:lsgt_switch_lock</name>
           <description>The "&lt; &gt;" key chooses 5th level and acts as a one-time lock if pressed with another 5th level chooser</description>
         </configItem>
