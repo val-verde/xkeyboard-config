@@ -344,3 +344,341 @@ xkb_symbols "sgs" {
     key <AC08>	{[ k,     	K, 	        kcedilla,   Kcedilla]};
     key <AC09>	{[ l,     	L, 	        lcedilla,   Lcedilla]};
 };
+
+// Lithuanian Ratise keymap ver. 2.1 by Algirdas Buckus <algirdasbuckus@gmail.com>
+// last changes 2020/11/26
+
+default  partial alphanumeric_keys modifier_keys
+xkb_symbols "ratise" {
+
+    include "level3(ralt_switch)"
+
+    name[Group1]="Lithuanian (Ratise)";
+
+    key <TLDE> { [       plus,     section,                grave,              acute ] };
+    key <AE01> { [     exclam,    currency, rightsinglequotemark,         exclamdown ] };
+    key <AE02> { [      colon,          at,            0x10027E8,          0x1002190 ] }; // MATHEMATICAL LEFT ANGLE BRACKET; LEFTWARDS ARROW
+    key <AE03> { [     period,  numbersign,            0x10027E9,          0x1002192 ] }; // MATHEMATICAL RIGHT ANGLE BRACKET; RIGHTWARDS ARROW
+    key <AE04> { [   asterisk,      dollar, rightdoublequotemark,           sterling ] };
+    key <AE05> { [ underscore,     percent,              notsign,          0x1002030 ] }; // PER MILLE SIGN
+    key <AE06> { [     emdash,         bar,          asciicircum,          brokenbar ] };
+    key <AE07> { [      equal,   ampersand,                    7,           notequal ] };
+    key <AE08> { [      comma,        less,                    8,      lessthanequal ] };
+    key <AE09> { [  semicolon,     greater,                    9,   greaterthanequal ] };
+    key <AE10> { [      slash,   backslash,             division,          0x1002016 ] }; // DOUBLE VERTICAL LINE
+    key <AE11> { [          w,           W,          Greek_OMEGA,         registered ] };
+    key <AE12> { [   question,  asciitilde,            0x1002248,       questiondown ] }; // ALMOST EQUAL TO
+
+    key <AD01> { [    umacron,     Umacron,  leftsinglequotemark,          0x100203A ] }; // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+    key <AD02> { [  eabovedot,   Eabovedot,          bracketleft,          0x100030A ] }; // COMBINING RING ABOVE
+    key <AD03> { [          y,           Y,         bracketright,          0x1000302 ] }; // COMBINING CIRCUMFLEX ACCENT
+    key <AD04> { [          o,           O,  leftdoublequotemark,     guillemotright ] };
+    key <AD05> { [          q,           Q,            0x1000301,          0x1002191 ] }; // COMBINING ACUTE ACCENT; UPWARDS ARROW
+    key <AD06> { [          j,           J,             EuroSign,                yen ] };
+    key <AD07> { [          n,           N,                    4,          0x100014B ] }; // LATIN SMALL LETTER ENG
+    key <AD08> { [          k,           K,                    5,             dagger ] };
+    key <AD09> { [          g,           G,                    6, enfilledcircbullet ] };
+    key <AD10> { [          b,           B,             multiply,           infinity ] };
+    key <AD11> { [          c,           C,                 cent,          copyright ] };
+    key <AD12> { [          f,           F,               degree,           function ] };
+
+    key <AC01> { [          u,           U,           apostrophe,          0x1000304 ] }; // COMBINING MACRON
+    key <AC02> { [          e,           E,            parenleft,          0x1000259 ] }; // LATIN SMALL LETTER SCHWA
+    key <AC03> { [          i,           I,           parenright,          0x1000131 ] }; // LATIN SMALL LETTER DOTLESS I
+    key <AC04> { [          a,           A,             quotedbl,          0x1000308 ] }; // COMBINING DIAERESIS
+    key <AC05> { [          h,           H,            0x1000303,          0x10002DC ] }; // COMBINING TILDE ACCENT, SMALL TILDE
+    key <AC06> { [          l,           L,              lstroke,            Lstroke ] };
+    key <AC07> { [          r,           R,                    1,        onesuperior ] }; 
+    key <AC08> { [          t,           T,                    2,        twosuperior ] };
+    key <AC09> { [          s,           S,                    3,      threesuperior ] };
+    key <AC10> { [          p,           P,            0x1002212,          paragraph ] }; // MINUS SIGN
+    key <AC11> { [     zcaron,      Zcaron,                minus,          0x1000327 ] }; // COMBINING CEDILLA
+
+    key <AB01> { [    uogonek,     Uogonek,   singlelowquotemark,          0x1002039 ] }; // SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+    key <AB02> { [    eogonek,     Eogonek,            braceleft,          0x1000306 ] }; // COMBINING BREVE
+    key <AB03> { [    iogonek,     Iogonek,           braceright,          0x100030C ] }; // COMBINING CARON
+    key <AB04> { [    aogonek,     Aogonek,   doublelowquotemark,      guillemotleft ] };
+    key <AB05> { [          x,           X,            0x1000300,          0x1002193 ] }; // COMBINING GRAVE ACCENT; DOWNWARDS ARROW
+    key <AB06> { [          v,           V,           squareroot,          0x10025CA ] }; // LOZENGE
+    key <AB07> { [          m,           M,                    0,                 mu ] };
+    key <AB08> { [          d,           D,               period,       doubledagger ] };
+    key <AB09> { [     scaron,      Scaron,                comma,          0x10000B7 ] }; // MIDDLE DOT
+    key <AB10> { [     ccaron,      Ccaron,                 plus,          plusminus ] };
+
+    key <BKSL> { [          z,           Z,               ssharp,          0x1001E9E ] }; // LATIN CAPITAL LETTER SHARP S
+    key <LSGT> { [      minus,      endash,            0x1000307,          0x1000254 ] }; // COMBINING DOT ABOVE, LATIN SMALL LETTER OPEN O
+    key <SPCE> { [      space,       space,                space,       nobreakspace ] };
+
+ //   key <CAPS> { [      minus,      endash,            0x1000307,          0x1000254 ] }; // (Optional) // COMBINING DOT ABOVE, LATIN SMALL LETTER OPEN O
+    key <TAB>  { [        Tab,ISO_Left_Tab,            Multi_key                     ] }; // Tab as Multi_key (Compose)
+};
+
+// Lithuanian Ratise (with dead keys) keymap ver. 2.1 by Algirdas Buckus <algirdasbuckus@gmail.com>
+// last changes 2020/11/26
+
+default  partial alphanumeric_keys modifier_keys
+xkb_symbols "ratisetm" {
+
+    include "level3(ralt_switch)"
+
+    name[Group1]="Lithuanian (Ratise, with dead keys)";
+
+    key <TLDE> { [       plus,     section,                grave,              acute ] };
+    key <AE01> { [     exclam,    currency, rightsinglequotemark,         exclamdown ] };
+    key <AE02> { [      colon,          at,            0x10027E8,          0x1002190 ] }; // MATHEMATICAL LEFT ANGLE BRACKET; LEFTWARDS ARROW
+    key <AE03> { [     period,  numbersign,            0x10027E9,          0x1002192 ] }; // MATHEMATICAL RIGHT ANGLE BRACKET; RIGHTWARDS ARROW
+    key <AE04> { [   asterisk,      dollar, rightdoublequotemark,           sterling ] };
+    key <AE05> { [ underscore,     percent,              notsign,          0x1002030 ] }; // PER MILLE SIGN
+    key <AE06> { [     emdash,         bar,          asciicircum,          brokenbar ] }; 
+    key <AE07> { [      equal,   ampersand,                    7,           notequal ] };
+    key <AE08> { [      comma,        less,                    8,      lessthanequal ] };
+    key <AE09> { [  semicolon,     greater,                    9,   greaterthanequal ] };
+    key <AE10> { [      slash,   backslash,             division,          0x1002016 ] }; // DOUBLE VERTICAL LINE
+    key <AE11> { [          w,           W,          Greek_OMEGA,         registered ] };
+    key <AE12> { [   question,  asciitilde,            0x1002248,       questiondown ] }; // ALMOST EQUAL TO
+
+    key <AD01> { [    umacron,     Umacron,  leftsinglequotemark,          0x100203A ] }; // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+    key <AD02> { [  eabovedot,   Eabovedot,          bracketleft,     dead_abovering ] };
+    key <AD03> { [          y,           Y,         bracketright,    dead_circumflex ] };
+    key <AD04> { [          o,           O,  leftdoublequotemark,     guillemotright ] };
+    key <AD05> { [          q,           Q,            0x1000301,          0x1002191 ] }; // COMBINING ACUTE ACCENT; UPWARDS ARROW
+    key <AD06> { [          j,           J,             EuroSign,                yen ] };
+    key <AD07> { [          n,           N,                    4,          0x100014B ] }; // LATIN SMALL LETTER ENG
+    key <AD08> { [          k,           K,                    5,             dagger ] };
+    key <AD09> { [          g,           G,                    6, enfilledcircbullet ] };
+    key <AD10> { [          b,           B,             multiply,           infinity ] };
+    key <AD11> { [          c,           C,                 cent,          copyright ] };
+    key <AD12> { [          f,           F,               degree,           function ] };
+
+    key <AC01> { [          u,           U,           apostrophe,        dead_macron ] };
+    key <AC02> { [          e,           E,            parenleft,         dead_grave ] };
+    key <AC03> { [          i,           I,           parenright,         dead_acute ] };
+    key <AC04> { [          a,           A,             quotedbl,     dead_diaeresis ] };
+    key <AC05> { [          h,           H,            0x1000303,         dead_tilde ] }; // COMBINING TILDE ACCENT
+    key <AC06> { [          l,           L,              lstroke,            Lstroke ] };
+    key <AC07> { [          r,           R,                    1,        onesuperior ] }; 
+    key <AC08> { [          t,           T,                    2,        twosuperior ] };
+    key <AC09> { [          s,           S,                    3,      threesuperior ] };
+    key <AC10> { [          p,           P,            0x1002212,          paragraph ] }; // MINUS SIGN
+    key <AC11> { [     zcaron,      Zcaron,                minus,       dead_cedilla ] };
+
+    key <AB01> { [    uogonek,     Uogonek,   singlelowquotemark,          0x1002039 ] }; // SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+    key <AB02> { [    eogonek,     Eogonek,            braceleft,         dead_breve ] };
+    key <AB03> { [    iogonek,     Iogonek,           braceright,         dead_caron ] };
+    key <AB04> { [    aogonek,     Aogonek,   doublelowquotemark,      guillemotleft ] };
+    key <AB05> { [          x,           X,            0x1000300,          0x1002193 ] }; // COMBINING GRAVE ACCENT; DOWNWARDS ARROW
+    key <AB06> { [          v,           V,           squareroot,          0x10025CA ] }; // LOZENGE
+    key <AB07> { [          m,           M,                    0,                 mu ] };
+    key <AB08> { [          d,           D,               period,       doubledagger ] };
+    key <AB09> { [     scaron,      Scaron,                comma,          0x10000B7 ] }; // MIDDLE DOT
+    key <AB10> { [     ccaron,      Ccaron,                 plus,          plusminus ] };
+
+    key <BKSL> { [          z,           Z,               ssharp,          0x1001E9E ] }; // LATIN CAPITAL LETTER SHARP S
+    key <LSGT> { [      minus,      endash,            0x1000307,          0x1000254 ] }; // COMBINING DOT ABOVE, LATIN SMALL LETTER OPEN O
+    key <SPCE> { [      space,       space,                space,       nobreakspace ] };
+//    key <CAPS> { [      minus,      endash,            0x1000307,          0x1000254 ] }; // (Optional) // COMBINING DOT ABOVE, LATIN SMALL LETTER OPEN O
+    key <TAB>  { [        Tab,ISO_Left_Tab,            Multi_key                     ] }; // Tab as Multi_key (Compose)
+};
+
+// Lithuanian Ratise Latvian Phonetic keymap ver. 2.1 by Algirdas Buckus <algirdasbuckus@gmail.com>
+// last changes 2020/11/29
+
+default  partial alphanumeric_keys modifier_keys
+xkb_symbols "ratiselv" {
+
+    include "level3(ralt_switch)"
+
+    name[Group1]="Latvian (Ratise)";
+
+    key <TLDE> { [       plus,     section,                grave,              acute ] };
+    key <AE01> { [     exclam,    currency, rightsinglequotemark,         exclamdown ] };
+    key <AE02> { [      colon,          at,            0x10027E8,          0x1002190 ] }; // MATHEMATICAL LEFT ANGLE BRACKET; LEFTWARDS ARROW
+    key <AE03> { [     period,  numbersign,            0x10027E9,          0x1002192 ] }; // MATHEMATICAL RIGHT ANGLE BRACKET; RIGHTWARDS ARROW
+    key <AE04> { [   asterisk,      dollar, rightdoublequotemark,           sterling ] };
+    key <AE05> { [ underscore,     percent,              notsign,          0x1002030 ] }; // PER MILLE SIGN
+    key <AE06> { [     emdash,         bar,          asciicircum,          brokenbar ] };
+    key <AE07> { [      equal,   ampersand,                    7,           notequal ] };
+    key <AE08> { [      comma,        less,                    8,      lessthanequal ] };
+    key <AE09> { [  semicolon,     greater,                    9,   greaterthanequal ] };
+    key <AE10> { [      slash,   backslash,             division,          0x1002016 ] }; // DOUBLE VERTICAL LINE
+    key <AE11> { [          w,           W,          Greek_OMEGA,         registered ] };
+    key <AE12> { [   question,  asciitilde,            0x1002248,       questiondown ] }; // ALMOST EQUAL TO
+
+    key <AD01> { [   omacron,      Omacron,  leftsinglequotemark,          0x100203A ] }; // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+    key <AD02> { [  dead_cedilla,   0x1000326,          bracketleft,          0x100030A ] }; // COMBINING COMMA BELOW, COMBINING RING ABOVE
+    key <AD03> { [          y,           Y,         bracketright,          0x1000302 ] }; // COMBINING CIRCUMFLEX ACCENT
+    key <AD04> { [          o,           O,  leftdoublequotemark,     guillemotright ] };
+    key <AD05> { [          q,           Q,            0x1000301,          0x1002191 ] }; // COMBINING ACUTE ACCENT; UPWARDS ARROW
+    key <AD06> { [          j,           J,             EuroSign,                yen ] };
+    key <AD07> { [          n,           N,                    4,          0x100014B ] }; // LATIN SMALL LETTER ENG
+    key <AD08> { [          k,           K,                    5,             dagger ] };
+    key <AD09> { [          g,           G,                    6, enfilledcircbullet ] };
+    key <AD10> { [          b,           B,             multiply,           infinity ] };
+    key <AD11> { [          c,           C,                 cent,          copyright ] };
+    key <AD12> { [          f,           F,               degree,           function ] };
+
+    key <AC01> { [          u,           U,           apostrophe,          0x1000304 ] }; // COMBINING MACRON
+    key <AC02> { [          e,           E,            parenleft,          0x1000259 ] }; // LATIN SMALL LETTER SCHWA
+    key <AC03> { [          i,           I,           parenright,          0x1000131 ] }; // LATIN SMALL LETTER DOTLESS I
+    key <AC04> { [          a,           A,             quotedbl,          0x1000308 ] }; // COMBINING DIAERESIS
+    key <AC05> { [          h,           H,            0x1000303,          0x10002DC ] }; // COMBINING TILDE ACCENT, SMALL TILDE
+    key <AC06> { [          l,           L,              lstroke,            Lstroke ] };
+    key <AC07> { [          r,           R,                    1,        onesuperior ] }; 
+    key <AC08> { [          t,           T,                    2,        twosuperior ] };
+    key <AC09> { [          s,           S,                    3,      threesuperior ] };
+    key <AC10> { [          p,           P,            0x1002212,          paragraph ] }; // MINUS SIGN
+    key <AC11> { [          z,           Z,                minus,          0x1000327 ] }; // COMBINING CEDILLA
+
+    key <AB01> { [    umacron,     Umacron,   singlelowquotemark,          0x1002039 ] }; // SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+    key <AB02> { [    emacron,     Emacron,            braceleft,          0x1000306 ] }; // COMBINING BREVE
+    key <AB03> { [    imacron,     Imacron,           braceright,          0x100030C ] }; // COMBINING CARON
+    key <AB04> { [    amacron,     Amacron,   doublelowquotemark,      guillemotleft ] };
+    key <AB05> { [          x,           X,            0x1000300,          0x1002193 ] }; // COMBINING GRAVE ACCENT; DOWNWARDS ARROW
+    key <AB06> { [          v,           V,           squareroot,          0x10025CA ] }; // LOZENGE
+    key <AB07> { [          m,           M,                    0,                 mu ] };
+    key <AB08> { [          d,           D,               period,       doubledagger ] };
+    key <AB09> { [     scaron,      Scaron,                comma,          0x10000B7 ] }; // MIDDLE DOT
+    key <AB10> { [     ccaron,      Ccaron,                 plus,          plusminus ] };
+
+    key <BKSL> { [     zcaron,      Zcaron,               ssharp,          0x1001E9E ] }; // LATIN CAPITAL LETTER SHARP S
+    key <LSGT> { [      minus,      endash,            0x1000307,          0x1000254 ] }; // COMBINING DOT ABOVE, LATIN SMALL LETTER OPEN O
+    key <SPCE> { [      space,       space,                space,       nobreakspace ] };
+
+ //   key <CAPS> { [      minus,      endash,            0x1000307,          0x1000254 ] }; // (Optional) // COMBINING DOT ABOVE, LATIN SMALL LETTER OPEN O
+    key <TAB>  { [        Tab,ISO_Left_Tab,            Multi_key                     ] }; // Tab as Multi_key (Compose)
+};
+
+// Lithuanian Ratise Germanic Phonetic keymap ver. 2.1 by Algirdas Buckus <algirdasbuckus@gmail.com>
+// last changes 2020/11/29
+
+default  partial alphanumeric_keys modifier_keys
+xkb_symbols "ratiseg" {
+
+    include "level3(ralt_switch)"
+
+    name[Group1]="Germanic (Ratise)";
+
+    key <TLDE> { [       plus,     section,                grave,              acute ] };
+    key <AE01> { [     exclam,    currency, rightsinglequotemark,         exclamdown ] };
+    key <AE02> { [      colon,          at,            0x10027E8,          0x1002190 ] }; // MATHEMATICAL LEFT ANGLE BRACKET; LEFTWARDS ARROW
+    key <AE03> { [     period,  numbersign,            0x10027E9,          0x1002192 ] }; // MATHEMATICAL RIGHT ANGLE BRACKET; RIGHTWARDS ARROW
+    key <AE04> { [   asterisk,      dollar, rightdoublequotemark,           sterling ] };
+    key <AE05> { [ underscore,     percent,              notsign,          0x1002030 ] }; // PER MILLE SIGN
+    key <AE06> { [     emdash,         bar,          asciicircum,          brokenbar ] };
+    key <AE07> { [      equal,   ampersand,                    7,           notequal ] };
+    key <AE08> { [      comma,        less,                    8,      lessthanequal ] };
+    key <AE09> { [  semicolon,     greater,                    9,   greaterthanequal ] };
+    key <AE10> { [      slash,   backslash,             division,          0x1002016 ] }; // DOUBLE VERTICAL LINE
+    key <AE11> { [          w,           W,          Greek_OMEGA,         registered ] };
+    key <AE12> { [   question,  asciitilde,            0x1002248,       questiondown ] }; // ALMOST EQUAL TO
+
+    key <AD01> { [ odiaeresis,  Odiaeresis,  leftsinglequotemark,          0x100203A ] }; // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+    key <AD02> { [ adiaeresis,  Adiaeresis,          bracketleft,          0x100030A ] }; // COMBINING RING ABOVE
+    key <AD03> { [          y,           Y,         bracketright,          0x1000302 ] }; // COMBINING CIRCUMFLEX ACCENT
+    key <AD04> { [          o,           O,  leftdoublequotemark,     guillemotright ] };
+    key <AD05> { [          q,           Q,            0x1000301,          0x1002191 ] }; // COMBINING ACUTE ACCENT; UPWARDS ARROW
+    key <AD06> { [          j,           J,             EuroSign,                yen ] };
+    key <AD07> { [          n,           N,                    4,          0x100014B ] }; // LATIN SMALL LETTER ENG
+    key <AD08> { [          k,           K,                    5,             dagger ] };
+    key <AD09> { [          g,           G,                    6, enfilledcircbullet ] };
+    key <AD10> { [          b,           B,             multiply,           infinity ] };
+    key <AD11> { [          c,           C,                 cent,          copyright ] };
+    key <AD12> { [          f,           F,               degree,           function ] };
+
+    key <AC01> { [          u,           U,           apostrophe,          0x1000304 ] }; // COMBINING MACRON
+    key <AC02> { [          e,           E,            parenleft,          0x1000259 ] }; // LATIN SMALL LETTER SCHWA
+    key <AC03> { [          i,           I,           parenright,          0x1000131 ] }; // LATIN SMALL LETTER DOTLESS I
+    key <AC04> { [          a,           A,             quotedbl,          0x1000308 ] }; // COMBINING DIAERESIS
+    key <AC05> { [          h,           H,            0x1000303,          0x10002DC ] }; // COMBINING TILDE ACCENT, SMALL TILDE
+    key <AC06> { [          l,           L,              lstroke,            Lstroke ] };
+    key <AC07> { [          r,           R,                    1,        onesuperior ] }; 
+    key <AC08> { [          t,           T,                    2,        twosuperior ] };
+    key <AC09> { [          s,           S,                    3,      threesuperior ] };
+    key <AC10> { [          p,           P,            0x1002212,          paragraph ] }; // MINUS SIGN
+    key <AC11> { [          z,           Z,                minus,          0x1000327 ] }; // COMBINING CEDILLA
+
+    key <AB01> { [ udiaeresis,  Udiaeresis,   singlelowquotemark,          0x1002039 ] }; // SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+    key <AB02> { [         ae,          AE,            braceleft,          0x1000306 ] }; // COMBINING BREVE
+    key <AB03> { [     oslash,    Ooblique,           braceright,          0x100030C ] }; // COMBINING CARON
+    key <AB04> { [      aring,       Aring,   doublelowquotemark,      guillemotleft ] };
+    key <AB05> { [          x,           X,            0x1000300,          0x1002193 ] }; // COMBINING GRAVE ACCENT; DOWNWARDS ARROW
+    key <AB06> { [          v,           V,           squareroot,          0x10025CA ] }; // LOZENGE
+    key <AB07> { [          m,           M,                    0,                 mu ] };
+    key <AB08> { [          d,           D,               period,       doubledagger ] };
+    key <AB09> { [        eth,         ETH,                comma,          0x10000B7 ] }; // MIDDLE DOT
+    key <AB10> { [      thorn,       THORN,                 plus,          plusminus ] };
+
+    key <BKSL> { [     ssharp,   0x1001E9E,                   oe,                 OE ] }; // LATIN CAPITAL LETTER SHARP S
+    key <LSGT> { [         oe,          OE,            0x1000307,          0x1000254 ] }; // COMBINING DOT ABOVE, LATIN SMALL LETTER OPEN O
+    key <SPCE> { [      space,       space,                space,       nobreakspace ] };
+//    key <CAPS> { [         oe,          OE,            0x1000307,          0x1000254 ] }; // (Optional) // COMBINING DOT ABOVE, LATIN SMALL LETTER OPEN O
+    key <TAB>  { [        Tab,ISO_Left_Tab,            Multi_key                     ] }; // Tab as Multi_key (Compose)
+};
+
+// Lithuanian Ratise Cyrillic Phonetic keymap ver. 2.1 by Algirdas Buckus <algirdasbuckus@gmail.com>
+// last changes 2020/11/26
+
+default partial alphanumeric_keys
+xkb_symbols "ratiseru" {
+
+    include "level3(ralt_switch)"
+
+    name[Group1]="Russian (Ratise Cyrillic Phonetic)";
+
+    key <TLDE> { [        plus,       section,                 grave,              acute ] };
+    key <AE01> { [      exclam,      currency,  rightsinglequotemark,         exclamdown ] };
+    key <AE02> { [       colon,            at,           bracketleft,          braceleft ] };
+    key <AE03> { [      period,    numbersign,          bracketright,         braceright ] };
+    key <AE04> { [    asterisk,        dollar,  rightdoublequotemark,           sterling ] };
+    key <AE05> { [  underscore,       percent,               notsign,          0x1002030 ] }; // PER MILLE SIGN
+    key <AE06> { [      emdash,           bar,           asciicircum,          brokenbar ] };
+    key <AE07> { [       equal,     ampersand,                     7,           notequal ] };
+    key <AE08> { [       comma,          less,                     8,      lessthanequal ] };
+    key <AE09> { [   semicolon,       greater,                     9,   greaterthanequal ] };
+    key <AE10> { [       slash,     backslash,              division,          0x1002016 ] }; // DOUBLE VERTICAL LINE
+    key <AE11> { [ Cyrillic_shcha, Cyrillic_SHCHA,         0x1000475,          0x1000474 ] }; // CYRILLIC LETTER IZHITSA
+    key <AE12> { [    question,    asciitilde,             0x1002248,       questiondown ] }; // ALMOST EQUAL TO
+
+    key <AD01> { [ Byelorussian_shortu, Byelorussian_SHORTU, leftsinglequotemark, 0x100203A ] }; // SINGLE RIGHT-POINTING ANGLE QUOTATION MARK
+    key <AD02> { [ Cyrillic_e,      Cyrillic_E,         Ukrainian_ie,       Ukrainian_IE ] };
+    key <AD03> { [ Cyrillic_yeru,   Cyrillic_YERU,       Ukrainian_i,        Ukrainian_I ] };
+    key <AD04> { [ Cyrillic_o,      Cyrillic_O,       guillemotright,leftdoublequotemark ] };
+    key <AD05> { [ Cyrillic_hardsign, Cyrillic_HARDSIGN,   0x1000301,          0x100030B ] }; // COMBINING ACUTE ACCENT; COMBINING DOUBLE ACUTE ACCENT
+
+    key <AD06> { [ Cyrillic_shorti, Cyrillic_SHORTI,       0x1000458,          0x1000408 ] }; // CYRILLIC LETTER JE
+    key <AD07> { [ Cyrillic_en,     Cyrillic_EN,                   4,          0x1002116 ] }; // NUMERO SIGN
+    key <AD08> { [ Cyrillic_ka,     Cyrillic_KA,                   5,          0x10020BD ] }; // RUBLE SIGN
+    key <AD09> { [ Cyrillic_ghe,    Cyrillic_GHE,                  6,          0x10020B4 ] }; // HRYVNIA SIGN
+    key <AD10> { [ Cyrillic_be,     Cyrillic_BE,            multiply,           infinity ] };
+    key <AD11> { [ Cyrillic_tse,    Cyrillic_TSE,          0x100045F,          0x100040F ] }; // CYRILLIC LETTER DZHE
+    key <AD12> { [ Cyrillic_ef,     Cyrillic_EF,           0x1000473,          0x1000472 ] }; // CYRILLIC LETTER FITA
+
+    key <AC01> { [ Cyrillic_u,   Cyrillic_U,  apostrophe,       0x1000304 ] }; // COMBINING MACRON
+    key <AC02> { [ Cyrillic_ie,  Cyrillic_IE,  parenleft,        EuroSign ] };
+    key <AC03> { [ Cyrillic_i,   Cyrillic_I,  parenright,             yen ] };
+    key <AC04> { [ Cyrillic_a,   Cyrillic_A,    quotedbl,       0x1000308 ] }; // COMBINING DIAERESIS
+    key <AC05> { [ Ukrainian_ghe_with_upturn, Ukrainian_GHE_WITH_UPTURN, 0x10004CF,      0x10004C0 ] }; // CYRILLIC LETTER PALOCHKA
+    key <AC06> { [ Cyrillic_el,  Cyrillic_EL,  0x1000459,       0x1000409 ] }; // CYRILLIC LETTER LJE
+    key <AC07> { [ Cyrillic_er,  Cyrillic_ER,          1,     onesuperior ] };
+    key <AC08> { [ Cyrillic_te,  Cyrillic_TE,          2,     twosuperior ] };
+    key <AC09> { [ Cyrillic_es,  Cyrillic_ES,          3,   threesuperior ] };
+    key <AC10> { [ Cyrillic_pe,  Cyrillic_PE,  0x1002212,       paragraph ] }; // MINUS SIGN
+    key <AC11> { [ Cyrillic_zhe, Cyrillic_ZHE,     minus,       0x10002BC ] }; // MODIFIER LETTER APOSTROPHE
+
+    key <AB01> { [ Cyrillic_yu,       Cyrillic_YU,    singlelowquotemark,          0x1002039 ] }; // SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+    key <AB02> { [ Cyrillic_io,       Cyrillic_IO,             0x1000463,          0x1000462 ] }; // CYRILLIC YAT
+    key <AB03> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN,    Ukrainian_yi,       Ukrainian_YI ] };
+    key <AB04> { [ Cyrillic_ya,       Cyrillic_YA,         guillemotleft, doublelowquotemark ] };
+    key <AB05> { [ Cyrillic_ha,       Cyrillic_HA,             0x1000300,          0x100030F ] }; // COMBINING GRAVE ACCENT; COMBINING DOUBLE GRAVE ACCENT
+    key <AB06> { [ Cyrillic_ve,       Cyrillic_VE,             0x100045A,          0x100040A ] }; // CYRILLIC LETTER NJE
+    key <AB07> { [ Cyrillic_em,       Cyrillic_EM,                     0,                 mu ] };
+    key <AB08> { [ Cyrillic_de,       Cyrillic_DE,                0x1000452,       0x1000402 ] }; // CYRILLIC LETTER DJE
+    key <AB09> { [ Cyrillic_sha,      Cyrillic_SHA,               0x100045B,       0x100040B ] }; // CYRILLIC LETTER TSHE
+    key <AB10> { [ Cyrillic_che,      Cyrillic_CHE,                 plus,          plusminus ] };
+
+    key <BKSL> { [ Cyrillic_ze,       Cyrillic_ZE,             0x1000455,          0x1000405 ] }; // CYRILLIC LETTER DZE
+    key <LSGT> { [      minus,      endash,            0x1000307,          0x1000306 ] }; // (Optional) // COMBINING DOT ABOVE, COMBINING BREVE
+    key <SPCE> { [      space,       space,                space,       nobreakspace ] };
+
+ //   key <CAPS> { [      minus,      endash,            0x1000307,          0x1000306 ] }; // (Optional) // COMBINING DOT ABOVE, COMBINING BREVE
+};
