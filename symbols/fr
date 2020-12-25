@@ -1065,7 +1065,7 @@ xkb_symbols "us" {
     key <AC06> { [	   h,          H,    udiaeresis,       Udiaeresis ] }; // ü Ü
     key <AC07> { [	   j,          J,   ucircumflex,      Ucircumflex ] }; // û Û
     key <AC08> { [	   k,          K,   icircumflex,      Icircumflex ] }; // î Î
-    key <AC11> { [apostrophe,   quotedbl,dead_diaeresis                   ] };
+    key <AC11> { [apostrophe,   quotedbl,dead_diaeresis,           degree ] };
 
     key <AD03> { [	   e,          E,        eacute,           Eacute ] }; // é É
     key <AD04> { [	   r,          R,        egrave,           Egrave ] }; // è È
