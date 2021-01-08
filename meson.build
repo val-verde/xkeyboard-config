@@ -28,7 +28,7 @@ pkgconfig.generate(
 # KcGST only need to be installed as-is
 foreach dir: ['compat', 'geometry', 'keycodes', 'symbols', 'types']
     install_subdir(dir,
-                   exclude_files: ['Makefile.am'],
+                   exclude_files: ['Makefile.am', 'evdev.in'],
                    install_dir: dir_xkb_base)
 endforeach
 
