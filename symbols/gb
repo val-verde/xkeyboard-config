@@ -59,14 +59,14 @@ xkb_symbols "intl" {
 
 partial alphanumeric_keys
 xkb_symbols "extd" {
-    // Clone of the Microsoft "English (UK, Extended" layout, which
+    // Clone of the Microsoft "United Kingdom Extended" layout, which
     // includes dead keys for: grave; diaeresis; circumflex; tilde; and
     // accute. It also enables direct access to accute characters using
     // the Multi_key (Alt Gr).
     //
     // Taken from...
     //    "Windows Keyboard Layouts"
-    //    http://msdn.microsoft.com/en-us/goglobal/bb964651.aspx
+    //    https://docs.microsoft.com/en-gb/globalization/windows-keyboard-layouts#U
     //
     // -- Jonathan Miles <jon@cybah.co.uk>
 
