@@ -1390,6 +1390,12 @@
         </variant>
         <variant>
           <configItem>
+            <name>colemak_dh</name>
+            <description>English (Colemak-DH)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>dvorak</name>
             <description>English (Dvorak)</description>
           </configItem>
@@ -5586,6 +5592,12 @@
           <configItem>
             <name>colemak</name>
             <description>English (UK, Colemak)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak_dh</name>
+            <description>English (UK, Colemak-DH)</description>
           </configItem>
         </variant>
         <variant>

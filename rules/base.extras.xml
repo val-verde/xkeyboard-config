@@ -581,6 +581,12 @@
             <description>Polish (Colemak)</description>
           </configItem>
         </variant>
+	<variant>
+          <configItem popularity="exotic">
+            <name>colemak_dh</name>
+            <description>Polish (Colemak-DH)</description>
+          </configItem>
+        </variant>
         <variant>
           <configItem popularity="exotic">
             <name>sun_type6</name>
