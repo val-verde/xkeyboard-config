@@ -178,6 +178,27 @@ evdev keycode check:
       - keycodes/evdev
   needs: ['container-prep']
 
+
+# Checks for new keysyms to be added to symbols/inet (using xorgproto master)
+evdev keysym check (xorgproto master):
+  extends:
+    - .default_setup
+  stage: test
+  script:
+    # Check out the latest xorgproto tag
+    - git clone https://gitlab.freedesktop.org/xorg/proto/xorgproto
+    - .gitlab-ci/generate-evdev-keysyms.py --header xorgproto/include/X11/XF86keysym.h
+    - git diff --exit-code || (echo "New keysyms available, please update symbols/inet" && false)
+  allow_failure: true
+  artifacts:
+    when: on_failure
+    name: Updated inet keysyms
+    expire_in: 2 weeks
+    paths:
+      - symbols/inet
+  needs: ['container-prep']
+
+
 xmllint:
   extends:
     - .default_setup
