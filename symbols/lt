@@ -288,11 +288,6 @@ xkb_symbols "lekpa" {
     key <AB10> {[            h,                   H                ]};
 };
 
-partial alphanumeric_keys
-	xkb_symbols "sun_type6" {
-	include "sun_vndr/lt(sun_type6)"
-};
-
 // Samogitian (žemaiťiu/žemaičių) layout based on Lithuanian standard layout.
 // Long vowels are made by composition. It means after pressing vowel press grave accent (`).
 // This layout also supports special letters like ëůȧťď or Latvian ģŗļķ. These can be accessed by similar letter with holding AltGr.
@@ -410,4 +405,9 @@ xkb_symbols "us_dvorak" {
     key <AD12>	{ [    equal,        plus,     zcaron,       Zcaron ] };
 
     include "level3(ralt_switch)"
+};
+
+partial alphanumeric_keys
+	xkb_symbols "sun_type6" {
+	include "sun_vndr/lt(sun_type6)"
 };
