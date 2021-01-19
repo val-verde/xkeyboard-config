@@ -1067,6 +1067,15 @@
             </languageList>
           </configItem>
         </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>dvorak</name>
+            <description>Italian (Dvorak)</description>
+            <languageList>
+              <iso639Id>ita</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
