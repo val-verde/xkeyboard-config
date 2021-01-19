@@ -4267,24 +4267,6 @@
             <description>Lithuanian (Ratise)</description>
           </configItem>
         </variant>
-        <variant>
-          <configItem>
-            <name>ratiselv</name>
-            <description>Lithuanian (Ratise, Latvian Phonetic)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>ratiseg</name>
-            <description>Lithuanian (Ratise, Germanic Phonetic)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>ratiseru</name>
-            <description>Lithuanian (Ratise, Russian Cyrillic Phonetic)</description>
-          </configItem>
-        </variant>
       </variantList>
     </layout>
     <layout>
