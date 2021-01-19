@@ -288,31 +288,6 @@ xkb_symbols "lekpa" {
     key <AB10> {[            h,                   H                ]};
 };
 
-// EXTRAS:
-
-partial alphanumeric_keys modifier_keys
-xkb_symbols "us_dvorak" {
-
-    include "us(dvorak)"
-
-    name[Group1]="Lithuanian (Dvorak)";
-
-    key <AE01>	{ [        1,      exclam,    aogonek,      Aogonek ] };
-    key <AE02>	{ [        2,          at,     ccaron,       Ccaron ] };
-    key <AE03>	{ [        3,  numbersign,    eogonek,      Eogonek ] };
-    key <AE04>	{ [        4,      dollar,  eabovedot,    Eabovedot ] };
-    key <AE05>	{ [        5,     percent,    iogonek,      Iogonek ] };
-    key <AE06>	{ [        6, asciicircum,     scaron,       Scaron ] };
-    key <AE07>	{ [        7,   ampersand,    uogonek,      Uogonek ] };
-    key <AE08>	{ [        8,    asterisk,    umacron,      Umacron ] };
-    key <AE09>	{ [        9,   parenleft, doublelowquotemark,  parenleft ] };
-    key <AE10>	{ [        0,  parenright, leftdoublequotemark,parenright ] };
-    key <AD12>	{ [    equal,        plus,     zcaron,       Zcaron ] };
-
-    include "level3(ralt_switch)"
-};
-
-
 partial alphanumeric_keys
 	xkb_symbols "sun_type6" {
 	include "sun_vndr/lt(sun_type6)"
@@ -411,4 +386,28 @@ xkb_symbols "ratise" {
 
 //    key <CAPS> { [      minus,      endash,            0x1000307,          0x1002011 ] }; // (Optional) // COMBINING DOT ABOVE, NON-BREAKING HYPHEN
     key <TAB>  { [        Tab,ISO_Left_Tab,            Multi_key                     ] }; // Tab as Multi_key (Compose)
+};
+
+// EXTRAS:
+
+partial alphanumeric_keys modifier_keys
+xkb_symbols "us_dvorak" {
+
+    include "us(dvorak)"
+
+    name[Group1]="Lithuanian (Dvorak)";
+
+    key <AE01>	{ [        1,      exclam,    aogonek,      Aogonek ] };
+    key <AE02>	{ [        2,          at,     ccaron,       Ccaron ] };
+    key <AE03>	{ [        3,  numbersign,    eogonek,      Eogonek ] };
+    key <AE04>	{ [        4,      dollar,  eabovedot,    Eabovedot ] };
+    key <AE05>	{ [        5,     percent,    iogonek,      Iogonek ] };
+    key <AE06>	{ [        6, asciicircum,     scaron,       Scaron ] };
+    key <AE07>	{ [        7,   ampersand,    uogonek,      Uogonek ] };
+    key <AE08>	{ [        8,    asterisk,    umacron,      Umacron ] };
+    key <AE09>	{ [        9,   parenleft, doublelowquotemark,  parenleft ] };
+    key <AE10>	{ [        0,  parenright, leftdoublequotemark,parenright ] };
+    key <AD12>	{ [    equal,        plus,     zcaron,       Zcaron ] };
+
+    include "level3(ralt_switch)"
 };
