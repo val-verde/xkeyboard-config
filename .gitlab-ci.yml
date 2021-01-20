@@ -95,6 +95,7 @@ check-merge-request:
     reports:
       junit: results.xml
   allow_failure: true
+  dependencies: []
 
 make_install:
   extends: .default_build
