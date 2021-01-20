@@ -307,14 +307,14 @@ xkb_symbols "miniguru-intl" {
 partial alphanumeric_keys
 xkb_symbols "yoda" {
     include "gb(basic)"
-    name[Group1]= "English (UK, Yoda Layer5)";
+    name[Group1]= "English (UK, TEX Yoda Layer5)";
     include "us(lv5-yoda)"
     include "level3(ralt_switch)"
 };
 partial alphanumeric_keys
 xkb_symbols "yoda-intl" {
     include "gb(intl)"
-    name[Group1]= "English (UK, intl., with dead keys, Yoda Layer5)";
+    name[Group1]= "English (UK, intl., with dead keys, TEX Yoda Layer5)";
     include "us(lv5-yoda)"
     include "level3(ralt_switch)"
 };

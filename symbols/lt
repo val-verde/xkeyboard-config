@@ -318,7 +318,7 @@ xkb_symbols "sgs" {
 // Lithuanian Ratise keymap by Algirdas Buckus <algirdasbuckus@gmail.com>
 // last changes 2020/12/24
 
-default  partial alphanumeric_keys modifier_keys
+partial alphanumeric_keys modifier_keys
 xkb_symbols "ratise" {
 
     include "level3(ralt_switch)"
