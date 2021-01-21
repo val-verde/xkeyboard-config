@@ -97,7 +97,7 @@ xkb_symbols "deadacute" {
 
 partial alphanumeric_keys
 xkb_symbols "e1" {
-    // German extended layout E1 based on DIN 2137-1:2018-12
+    // German extended layout E1 based on DIN 2137-1:2020-11
     // Designed for a 105-key keyboard
     // https://de.wikipedia.org/wiki/Tastaturbelegung
 
@@ -190,7 +190,7 @@ xkb_symbols "e1" {
 
 partial alphanumeric_keys
 xkb_symbols "e2" {
-    // German extended layout E2 based on DIN 2137-1:2018-12
+    // German extended layout E2 based on DIN 2137-1:2020-11
     // Designed for a 104-key keyboard
     // https://de.wikipedia.org/wiki/Tastaturbelegung
 
