@@ -23,7 +23,7 @@ variables:
 
   # Changing the tag will rebuild the container images. The value is just a
   # string, but we use the date for human benefits.
-  FDO_DISTRIBUTION_TAG: '2021-01-08.0'
+  FDO_DISTRIBUTION_TAG: '2020-11-06.0'
 
 
 stages:
@@ -43,7 +43,7 @@ container-prep:
     # minimal set of packages required to build xkeyboard-config.
     BASE_PACKAGES: 'xorg-util-macros autoconf automake make gettext pkg-config gcc grep m4 python meson ninja git'
     # extra packages we need for various tests
-    EXTRA_PACKAGES: 'tree libxml2 bison xorg-xkbcomp python-pytest python-libevdev'
+    EXTRA_PACKAGES: 'tree libxml2 bison xorg-xkbcomp python-pytest'
     FDO_DISTRIBUTION_PACKAGES: $BASE_PACKAGES $EXTRA_PACKAGES
 
 
@@ -161,22 +161,6 @@ meson_from_tarball:
   variables:
     TARBALL: "xkeyboard-config-master.tar.bz2"
     GIT_STRATEGY: none
-
-# Checks for new evdev keycodes to be added to keycodes/evdev
-evdev keycode check:
-  extends:
-    - .default_setup
-  stage: test
-  script:
-    - .gitlab-ci/generate-evdev-keycodes.py --verbose --compare-with ./keycodes/evdev --template ./keycodes/evdev.in --output keycodes/evdev  || (echo "keycodes/evdev file needs to be updated" && false)
-  allow_failure: true
-  artifacts:
-    when: on_failure
-    name: Updated evdev keycodes
-    expire_in: 2 weeks
-    paths:
-      - keycodes/evdev
-  needs: ['container-prep']
 
 xmllint:
   extends:
