@@ -156,7 +156,6 @@ default xkb_keycodes "evdev" {
 	<KATA> =  98;	// Katakana
 	<HIRA> =  99;	// Hiragana
 	<JPCM> = 103;	// KPJPComma
-	//<RO>   =  97;	// Romaji
 
 	// Keys that are generated on Korean keyboards
 
@@ -182,6 +181,10 @@ default xkb_keycodes "evdev" {
 	<FIND> = 144;
 	<CUT>  = 145;
 	<HELP> = 146;
+	alias <OUTP> = <I235>;
+	alias <KITG> = <I236>;
+	alias <KIDN> = <I237>;
+	alias <KIUP> = <I238>;
 
 	// Extended keys that may be generated on "Internet" keyboards.
 	// evdev has standardize names for these.
