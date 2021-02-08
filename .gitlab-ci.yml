@@ -185,17 +185,21 @@ layout_tests:
     - meson builddir -Denable-wayland=false -Denable-x11=false -Denable-docs=false -Dxkb-config-root="$INSTDIR/share/X11/xkb"
     - ninja -C builddir
     - echo Running test script - this will take several minutes
-    - ./builddir/xkeyboard-config-test "$INSTDIR/share/X11/xkb/rules/evdev.xml" > $INSTDIR/xkeyboard-config-test.out
-    - ./builddir/xkeyboard-config-test "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" >> $INSTDIR/xkeyboard-config-test.out
+    - ./builddir/xkeyboard-config-test "$INSTDIR/share/X11/xkb/rules/evdev.xml" > $INSTDIR/xkeyboard-config-test.stdout 2> $INSTDIR/xkeyboard-config-test.stderr
+    - ./builddir/xkeyboard-config-test "$INSTDIR/share/X11/xkb/rules/evdev.extras.xml" >> $INSTDIR/xkeyboard-config-test.stdout 2>> $INSTDIR/xkeyboard-config-test.stderr
     - popd > /dev/null
-    - xz -z "$INSTDIR/xkeyboard-config-test.out"
+  after_script:
+    - xz -z "$INSTDIR/xkeyboard-config-test.stdout"
+    - xz -z "$INSTDIR/xkeyboard-config-test.stderr"
   variables:
     GIT_STRATEGY: none
   artifacts:
+    when: on_failure
     name: xkeyboard-config test output
     expire_in: 2 weeks
     paths:
-    - $INSTDIR/xkeyboard-config-test.out.xz
+    - $INSTDIR/xkeyboard-config-test.stdout.xz
+    - $INSTDIR/xkeyboard-config-test.stderr.xz
 
 keymap_tests:
   extends: .default_setup
