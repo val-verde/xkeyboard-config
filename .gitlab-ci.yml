@@ -219,8 +219,13 @@ layout_tests:
   script:
     # make sure the custom layout resolves to something
     - ln -s "$INSTDIR/share/X11/xkb/symbols/us" "$INSTDIR/share/X11/xkb/symbols/custom"
-    - git clone https://github.com/xkbcommon/libxkbcommon
+    - rm -rf xorgproto libxkbcommon
+    # Get latest xorgproto so we definitely have all keysyms
+    - git clone --depth=1 https://gitlab.freedesktop.org/xorg/proto/xorgproto
+    - export X11_HEADERS_PREFIX="$PWD/xorgproto/"
+    - git clone --depth=1 https://github.com/xkbcommon/libxkbcommon
     - pushd libxkbcommon > /dev/null
+    - ./scripts/update-keysyms
     - meson builddir -Denable-wayland=false -Denable-x11=false -Denable-docs=false -Dxkb-config-root="$INSTDIR/share/X11/xkb"
     - ninja -C builddir
     - echo Running test script - this will take several minutes
