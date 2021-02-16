@@ -5442,6 +5442,24 @@
             </languageList>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>ot</name>
+            <description>Ottoman</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>otf</name>
+            <description>Ottoman (F)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>otk</name>
+            <description>Old Turkic</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
