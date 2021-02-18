@@ -338,6 +338,12 @@
             <description>Latvian (Sun Type 6/7)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>apostrophe-deadquotes</name>
+            <description>Latvian (apostrophe, dead quotes)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
