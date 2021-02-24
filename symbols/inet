@@ -197,10 +197,6 @@ xkb_symbols "evdev" {
 //  key <I236>   {      [ ]                             }; // see <KITG>
 //  key <I237>   {      [ ]                             }; // see <KIDN>
 //  key <I238>   {      [ ]                             }; // see <KIUP>
-//  key <I249>   {      [ ]       }; // KEY_VIDEO_NEXT  --  drive next video source
-//  key <I250>   {      [ ]       }; // KEY_VIDEO_PREV  --  drive previous video source
-//  key <I252>   {      [ ]       }; // KEY_BRIGHTNESS_ZERO  --  brightness off
-//  key <I253>   {      [ ]       }; // KEY_DISPLAY_OFF  --  turn off display
 
     key <I372>  {       [ XF86Favorites          ]       };
     key <I382>  {       [ XF86Keyboard           ]       };
