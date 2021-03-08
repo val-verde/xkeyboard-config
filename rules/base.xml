@@ -1396,6 +1396,12 @@
         </variant>
         <variant>
           <configItem>
+            <name>colemak_dh_iso</name>
+            <description>English (Colemak-DH ISO)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>dvorak</name>
             <description>English (Dvorak)</description>
           </configItem>

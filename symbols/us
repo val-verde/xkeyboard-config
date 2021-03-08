@@ -863,6 +863,18 @@ xkb_symbols "colemak_dh" {
     include "level3(ralt_switch)"
 };
 
+// Colemak-DH (ISO) symbols for xkb on X.Org Server 7.x
+// https://colemakmods.github.io/mod-dh/
+
+xkb_symbols "colemak_dh_iso" {
+
+    include "us(colemak_dh)"
+    name[Group1]= "English (Colemak-DH ISO)";
+
+    key <AB05> { [ backslash, bar, asciitilde, brokenbar] };
+
+    include "level3(ralt_switch)"
+};
 
 // I do NOT like dead-keys - the International keyboard as defined by Microsoft
 // does not fit my needs. Why use two keystrokes for all simple characters (eg '
