@@ -2168,7 +2168,8 @@ xkb_symbols "lv5-hyena" {
     key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, Right,     Right     ] };
     key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, Next,      Next      ] };
 
-    key <SPCE> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, BackSpace, BackSpace ] };
+    key <SPCE> { [ space, space, space, nobreakspace,      BackSpace, BackSpace ] };
+
 };
 partial alphanumeric_keys
 xkb_symbols "hyena" {
@@ -2275,7 +2276,7 @@ xkb_symbols "lv5-miniguru" {
     key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, Next,        Next        ] }; // hH
     key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, Delete,      Delete      ] }; // fF
     key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, Insert,      Insert      ] }; // ;:
-    key <SPCE> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, BackSpace,   BackSpace   ] }; // Space
+    key <SPCE> { [ space, space, space, nobreakspace,      BackSpace,   BackSpace   ] }; // Space
 };
 partial alphanumeric_keys
 xkb_symbols "miniguru" {
@@ -2384,6 +2385,7 @@ xkb_symbols "lv5-yoda" {
     key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol,             NoSymbol              ] }; // ,<
     key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol,             NoSymbol              ] }; // .>
     key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol,             NoSymbol              ] }; // /?
+    key <SPCE> { [ space, space, space, nobreakspace,      BackSpace,            BackSpace             ] }; // Space
 };
 partial alphanumeric_keys
 xkb_symbols "yoda" {
