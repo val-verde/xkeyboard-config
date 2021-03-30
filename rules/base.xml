@@ -6266,7 +6266,7 @@
       <configItem>
         <name>id</name>
         <shortDescription>id</shortDescription>
-        <description>Indonesian (Arab Melayu, phonetic)</description>
+        <description>Indonesian (Latin)</description>
         <languageList>
           <iso639Id>ind</iso639Id>
           <iso639Id>msa</iso639Id>
@@ -6281,7 +6281,7 @@
        <variant>
          <configItem>
           <name>phoneticx</name>
-            <description>Indonesian (Arab Melayu, extended phonetic)</description>
+            <description>Indonesian (Arab Pegon, extended phonetic)</description>
          </configItem>
        </variant>
       </variantList>
