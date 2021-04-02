@@ -7089,6 +7089,12 @@
       </option>
       <option>
         <configItem>
+          <name>altwin:ctrl_rwin</name>
+          <description>Ctrl is mapped to Right Win and the usual Ctrl</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>altwin:ctrl_alt_win</name>
           <description>Ctrl is mapped to Alt, Alt to Win</description>
         </configItem>
