@@ -1009,7 +1009,7 @@ xkb_symbols "geo" {
 partial alphanumeric_keys
 xkb_symbols "us" {
 
-    include "us(euro)"
+    include "us(basic)"
     name[Group1]= "French (US)";
 
 
@@ -1039,6 +1039,9 @@ xkb_symbols "us" {
     key <AD12> { [bracketright, braceright, guillemotright, rightdoublequotemark ] }; // » ”
 
     key <AE04> { [        4,     dollar,      EuroSign,         currency ] }; // € ¤
+
+    include "level3(ralt_switch)"
+    include "eurosign(5)"
 };
 
 // EXTRAS:
@@ -1141,7 +1144,7 @@ xkb_symbols "azerty" {
 partial alphanumeric_keys
 xkb_symbols "us-alt" {
 
-    include "us(euro)"
+    include "us(basic)"
     name[Group1]= "French (US with dead keys, alt.)";
 
     key <AB03> { [         c,          C,      ccedilla,         Ccedilla ] }; // ç Ç
@@ -1157,6 +1160,9 @@ xkb_symbols "us-alt" {
     key <TLDE> { [dead_grave, asciitilde,         grave ] };
     key <AE06> { [dead_circumflex, asciicircum,       6 ] };
     key <AE04> { [         4,     dollar,      EuroSign,         currency ] }; // € ¤
+
+    include "level3(ralt_switch)"
+    include "eurosign(5)"
 };
 
 // For physically modified US keyboard (Q <-> A, W <-> Z and ; <-> M)

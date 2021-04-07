@@ -183,7 +183,7 @@ xkb_symbols "olpc" {
 partial alphanumeric_keys modifier_keys
 xkb_symbols "us" {
 
-    include "us(euro)"
+    include "us(basic)"
 
     name[Group1]= "Italian (US)";
 
@@ -216,6 +216,7 @@ xkb_symbols "us" {
     key <AB09> { [    period,    greater,  guillemotright                 ] };
 
     include "level3(ralt_switch)"
+    include "eurosign(5)"
 };
 
 partial alphanumeric_keys
