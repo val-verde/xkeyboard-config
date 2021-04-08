@@ -62,6 +62,8 @@ xkb_symbols "euro" {
     include "us(basic)"
     name[Group1]= "English (US, euro on 5)";
 
+    key <LSGT> {	[ backslash,         bar	]	};
+
     include "eurosign(5)"
 
     include "level3(ralt_switch)"
