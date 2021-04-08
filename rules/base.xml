@@ -3029,6 +3029,12 @@
       <variantList>
         <variant>
           <configItem>
+            <name>us</name>
+            <description>Dutch (US)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>mac</name>
             <description>Dutch (Macintosh)</description>
           </configItem>
