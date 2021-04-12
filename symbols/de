@@ -1195,7 +1195,7 @@ xkb_symbols "neo_qwerty" {
 };
 
 partial alphanumeric_keys
-    xkb_symbols "lld" {
+xkb_symbols "lld" {
     include "de(basic)"
     name[Group1] = "German (Ladin)";
 
