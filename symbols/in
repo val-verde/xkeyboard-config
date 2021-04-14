@@ -16,7 +16,7 @@
 // - Indic INSCRIPT keyboard layout diagrams:
 //     http://java.sun.com/products/jfc/tsc/articles/InputMethod/indiclayout.html
 // - Bangla Baishakhi (Bangla layouts):
-// - Bangla Baishakhi Inscript (Bangla layouts):
+// - Bangla Baishakhi InScript (Bangla layouts):
 // - Bangla Bornona (Bangla layouts):
 // - Uni Gitanjali (Bangla layouts):
 //     http://nltr.org
@@ -319,7 +319,7 @@ xkb_symbols "ben_probhat" {
     include "rupeesign(4)"
 };
 
-// Bangla Baishakhi, Bangla Baishakhi Inscript, Bangla Bornona, Uni Gitanjali Layouts are added by Promathesh Mandal <promathesh812004@gmail.com>
+// Bangla Baishakhi, Bangla Baishakhi InScript, Bangla Bornona, Uni Gitanjali Layouts are added by Promathesh Mandal <promathesh812004@gmail.com>
 
 xkb_symbols "ben_baishakhi" {
  name[Group1]= "Bangla (India, Baishakhi)";
@@ -397,7 +397,7 @@ xkb_symbols "ben_baishakhi" {
 };
 
 xkb_symbols "ben_inscript" {
-    name[Group1]= "Bangla (India, Baishakhi Inscript)";
+    name[Group1]= "Bangla (India, Baishakhi InScript)";
 
       // Mainly numbers.
       key <TLDE> { [      0x100200D, 0x100200C	] 	};
@@ -682,7 +682,7 @@ xkb_symbols "guj" {
 partial alphanumeric_keys
 xkb_symbols "kan" {
 
-    // Inscript layout for Kannada  
+    // InScript layout for Kannada  
     // Author : G Karunakar <karunakar@freedomink.org>
     // Date   : Wed Nov 13 17:22:58 IST 2002
     // Kannada digits mapped in basic only
@@ -984,7 +984,7 @@ xkb_symbols "olck" {
 
 partial alphanumeric_keys
 xkb_symbols "ori" {
-    // Inscript layout for Oriya  
+    // InScript layout for Oriya  
     // Author: G Karunakar <karunakar@freedomink.org>
     // Date: Wed Nov 13 18:16:19 IST 2002
 
@@ -1049,7 +1049,7 @@ xkb_symbols "ori" {
 
 partial alphanumeric_keys
 xkb_symbols "tam" {
-      name[Group1]= "Tamil (Inscript)";
+      name[Group1]= "Tamil (InScript)";
 
       key <TLDE> { [      U0BCA, U0B92	]	};
 
@@ -1359,7 +1359,7 @@ xkb_symbols "tam_tamilnet_TAB" {
 partial alphanumeric_keys
 xkb_symbols "tel" {
 
-    // Inscript layout for Telugu using Unicode 
+    // InScript layout for Telugu using Unicode 
     // Author: G Karunakar <karunakar@freedomink.org>
     // Date:
     // See layout at http://www.indlinux.org/keymap/telugu.php
@@ -1584,10 +1584,10 @@ xkb_symbols "guru" {
     include "level3(ralt_switch)"
 };
 
-//Name		:	Jhelum (Refind Inscript)
+//Name		:	Jhelum (Refind InScript)
 //Description	:	A Jhelum keyboard layout for Gurmukhi (Punjabi)
 //			http://www.satluj.org/Jhelum.html
-//Modified for Inscript to make
+//Modified for InScript to make
 //Original Author :	Amanpreet Singh Alam <apreet.alam@gmail.com
 
 partial alphanumeric_keys
@@ -1804,13 +1804,13 @@ xkb_symbols "eng" {
 // Author      : Mahesh T Pai <paivakil@gmail.com>
 // Date        : March, 2011
 // Source      : http://www.nongnu.org/smc/docs/images/ml_inscript_layout.jpg
-// Comment     : Based on the Inscript Keyboard created by M Baiju
+// Comment     : Based on the InScript Keyboard created by M Baiju
 // Mapping:
 
 partial alphanumeric_keys
 xkb_symbols "mal_enhanced" {
 
-    name[Group1] = "Malayalam (enhanced Inscript, with rupee)";
+    name[Group1] = "Malayalam (enhanced InScript, with rupee)";
 
    //From grave to backslash (\)
 
@@ -2264,7 +2264,7 @@ xkb_symbols "iipa" {
 // Contact - niranjanvikastambe@gmail.com
 
 xkb_symbols "marathi" {
-	name[Group1]="Marathi (enhanced Inscript)";
+	name[Group1]="Marathi (enhanced InScript)";
 	key <TLDE> { [ U0962, U090C,   grave, asciitilde  ] }; // Added  ॢ & ऌ
 	key <AE01> { [ U0967, exclam,       1, exclam      ] }; // Added exclamation mark
 	key <AE02> { [ U0968, U0945,       2, at          ] }; // Added ॅ
