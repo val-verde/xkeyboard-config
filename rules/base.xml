@@ -2069,6 +2069,32 @@
         </variant>
         <variant>
            <configItem>
+            <name>ori-bolnagri</name>
+            <!-- Keyboard indicator for Oriya layouts -->
+            <shortDescription>or</shortDescription>
+            <description>Oriya (Bolnagri)</description>
+            <languageList>
+              <iso639Id>ori</iso639Id>
+              <!-- sat-Orya: http://www.ethnologue.com/language/sat -->
+              <iso639Id>sat</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>ori-wx</name>
+            <!-- Keyboard indicator for Oriya layouts -->
+            <shortDescription>or</shortDescription>
+            <description>Oriya (Wx)</description>
+            <languageList>
+              <iso639Id>ori</iso639Id>
+              <!-- sat-Orya: http://www.ethnologue.com/language/sat -->
+              <iso639Id>sat</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+           <configItem>
             <name>olck</name>
             <!-- Keyboard indicator for Ol Chiki layouts -->
             <shortDescription>sat</shortDescription>
