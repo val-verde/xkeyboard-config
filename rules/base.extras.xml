@@ -730,14 +730,12 @@
             </countryList>
             <languageList>
               <iso639Id>rus</iso639Id>
-              <iso639Id>rus-petr1708</iso639Id>
               <iso639Id>ukr</iso639Id>
               <iso639Id>bel</iso639Id>
               <iso639Id>srp</iso639Id>
               <iso639Id>mkd</iso639Id>
               <iso639Id>bul</iso639Id>
               <iso639Id>chu</iso639Id>
-              <iso639Id>rum-Cyrl</iso639Id>
               <iso639Id>kaz</iso639Id>
               <iso639Id>kir</iso639Id>
               <iso639Id>uzb</iso639Id>
