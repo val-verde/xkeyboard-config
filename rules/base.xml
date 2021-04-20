@@ -2868,7 +2868,7 @@
             <name>tib</name>
             <description>Tibetan</description>
             <languageList>
-              <iso639Id>tib</iso639Id>
+              <iso639Id>bod</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -2877,7 +2877,7 @@
             <name>tib_asciinum</name>
             <description>Tibetan (with ASCII numerals)</description>
             <languageList>
-              <iso639Id>tib</iso639Id>
+              <iso639Id>bod</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -3692,7 +3692,7 @@
             <name>tr</name>
             <description>Turkish (Germany)</description>
             <languageList>
-              <iso639Id>tr</iso639Id>
+              <iso639Id>tur</iso639Id>
             </languageList>
           </configItem>
         </variant>
@@ -6324,7 +6324,7 @@
         <shortDescription>jv</shortDescription>
         <description>Indonesian (Javanese)</description>
         <languageList>
-          <iso639Id>jv</iso639Id>
+          <iso639Id>jav</iso639Id>
         </languageList>
       </configItem>
       <variantList/>
