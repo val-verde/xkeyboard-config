@@ -2297,7 +2297,7 @@
             <name>iipa</name>
             <description>Indic IPA</description>
             <languageList>
-              <iso639Id>inc</iso639Id>
+              <iso639Id>eng</iso639Id>
             </languageList>
           </configItem>
         </variant>
