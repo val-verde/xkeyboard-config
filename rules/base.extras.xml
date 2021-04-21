@@ -1384,21 +1384,6 @@
     </layout>
     <layout>
       <configItem popularity="exotic">
-        <name>cm</name>
-        <shortDescription>cm</shortDescription>
-        <description>English (Cameroon)</description>
-      </configItem>
-      <variantList>
-        <variant>
-          <configItem popularity="exotic">
-            <name>mmuock</name>
-            <description>Mmuock</description>
-          </configItem>
-        </variant>
-      </variantList>
-    </layout>
-    <layout>
-      <configItem popularity="exotic">
         <name>trans</name>
         <!-- Keyboard layouts for transcription and transliteration systems -->
         <description>International Phonetic Alphabet</description>
