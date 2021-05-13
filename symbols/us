@@ -1710,6 +1710,76 @@ xkb_symbols "cz_sk_de" {
     include "level3(ralt_switch)"
 };
 
+// This is the above Jirka's us(cz_sk_de) layout variant extended with Polish, Spanish, Finnish and Swedish characters.
+// This layout variant is primarily targeted to Czech and Slovak polyglots and SW engineers (like the original above one).
+partial alphanumeric_keys
+xkb_symbols "cz_sk_pl_de_es_fi_sv" {
+
+    include "us"
+    name[Group1]="Czech, Slovak, Polish, Spanish, Finnish, Swedish and German (US)";
+
+    key <TLDE>  { [grave,   asciitilde, uring,      Uring       ] };
+    key <AE01>	{ [    1,	exclam,	uacute,	    Uacute	] };
+    key <AE02>	{ [    2,           at, ecaron,	    Ecaron	] };
+    key <AE03>	{ [    3,   numbersign, scaron,	    Scaron	] };
+    key <AE04>	{ [    4,       dollar,	ccaron,	    Ccaron	] };
+    key <AE05>	{ [    5,      percent, rcaron,	    Rcaron	] };
+    key <AE06>	{ [    6,  asciicircum, zcaron,	    Zcaron	] };
+    key <AE07>	{ [    7,    ampersand,	yacute,	    Yacute	] };
+    key <AE08>	{ [    8,     asterisk, aacute,	    Aacute	] };
+    key <AE09>	{ [    9,    parenleft,	iacute,	    Iacute	] };
+    key <AE10>	{ [    0,   parenright, eacute,	    Eacute	] };
+    key <AE11>	{ [minus,   underscore, ssharp,     0x1001E9E	] };
+    key <AE12>	{ [equal,	  plus, dead_acute, dead_caron  ] };
+
+    key <AD03>	{ [         e,          E,     EuroSign,     Eacute ]	};
+
+    key <AD11>	{ [bracketleft, braceleft,   udiaeresis,   Udiaeresis ]	};
+    key <AC10>	{ [ semicolon,      colon,   odiaeresis,   Odiaeresis ]	};
+    key <AC11>	{ [apostrophe,      quotedbl,adiaeresis,   Adiaeresis ]	};
+
+    key <AC01>	{ [         a,          A,     aacute,	     Aacute   ]	};
+    key <AD08>	{ [         i,          I,     iacute,	     Iacute   ]	};
+    key <AD09>	{ [         o,          O,     oacute,       Oacute   ]	};
+    key <AD06>	{ [         y,          Y,     yacute,       Yacute   ]	};
+    key <AD07>	{ [         u,          U,     uring,	     Uring    ]	};
+
+    key <AC02>	{ [         s,          S,     scaron,       Scaron   ]	};
+    key <AB01>	{ [         z,          Z,     zcaron,	     Zcaron   ]	};
+    key <AB03>	{ [         c,          C,     ccaron,       Ccaron   ]	};
+    key <AD04>	{ [         r,          R,     rcaron,	     Rcaron   ]	};
+    key <AD05>	{ [         t,          T,     tcaron,	     Tcaron   ]	};
+    key <AC03>	{ [         d,          D,     dcaron,	     Dcaron   ]	};
+    key <AB06>	{ [         n,          N,     ncaron,	     Ncaron   ]	};
+    key <AC09>  { [         l,          L,     lcaron,       Lcaron   ] };
+    key <AD10>  { [         p,          P,ocircumflex,  Ocircumflex   ] };
+
+    key <SPCE>  { [     space,       space, nobreakspace, nobreakspace] };
+
+    // Polish
+    key <AD01>	{ [         q,          Q,      aogonek,      Aogonek ]	};
+    key <AD02>	{ [         w,          W,      eogonek,      Eogonek ]	};
+    key <AD12>	{ [bracketright, braceright, guillemotleft, guillemotright ] };
+    key <AC04>	{ [         f,          F,       sacute,       Sacute ]	};
+    key <AC05>	{ [         g,          G,    copyright,   registered ]	};
+    key <AC06>	{ [         h,          H,         cent,    trademark ]	};
+    key <AC07>	{ [         j,          J,    plusminus,       degree ] };
+    key <AC08>	{ [         k,          K,      lstroke,      Lstroke ]	};
+    //alias <AC12> = <BKSL>;
+    key <BKSL>	{ [ backslash,        bar,        aring,      Aring   ] };
+    //Requires pc105 compatibility
+    key <LSGT>	{ [    endash,     emdash,    zabovedot,    Zabovedot ]	};
+    key <AB02>	{ [         x,          X,       zacute,       Zacute ]	};
+    key <AB04>	{ [         v,          V,       cacute,       Cacute ]	};
+    key <AB05>	{ [         b,          B,       ntilde,       Ntilde ] };
+    key <AB07>	{ [         m,          M,       nacute,       Nacute ]	};
+    key <AB08>	{ [     comma,       less,lessthanequal,     multiply ]	};
+    key <AB09>	{ [    period,    greater, greaterthanequal, division ]	};
+    key <AB10>	{ [     slash,   question,   exclamdown, questiondown ] };
+
+    include "level3(ralt_switch)"
+};
+
 // 03 December 2017 - Added us(scn), please refer to
 //                    Cadèmia Siciliana <l10n@cademiasiciliana.org>
 partial alphanumeric_keys
