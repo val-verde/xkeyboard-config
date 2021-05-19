@@ -4,12 +4,25 @@
 #
 # This file is formatted with Python Black
 
+import argparse
 import yaml
 import sys
+import pathlib
 from xml.dom import minidom
 
-with open(sys.argv[1]) as fd:
-    yml = yaml.safe_load(open(sys.argv[1]))
+parser = argparse.ArgumentParser(description="Converts YAML to JUnit XML")
+parser.add_argument(
+    "inputfile",
+    type=pathlib.Path,
+    help="The YAML output file from the keyboard layout tester",
+)
+args = parser.parse_args()
+if not args.inputfile.exists():
+    print(f"No such file: {args.inputfile}")
+    sys.exit(0)
+
+with open(args.inputfile) as fd:
+    yml = yaml.safe_load(fd)
 
     doc = minidom.Document()
     suite = doc.createElement("testsuite")
