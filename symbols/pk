@@ -362,7 +362,7 @@ xkb_symbols "olpc" {
    key <AC08> {  [ 0x10006A9, 0x100062E ] };
    key <AC09> {  [ 0x1000644, 0x1000656 ] };
    key <AC10> {  [ 0x100061B, colon ] };
-   key <AC11> {  [ quote, doublequote  ] };
+   key <AC11> {  [ apostrophe, quotedbl ] };
 
    key <BKSL> { [  backslash, bar  ] };
    key <SPCE> { [  space  ] };
