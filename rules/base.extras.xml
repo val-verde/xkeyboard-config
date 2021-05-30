@@ -1070,6 +1070,24 @@
     </layout>
     <layout>
       <configItem popularity="exotic">
+        <name>pk</name>
+        <shortDescription>ur</shortDescription>
+        <description>Urdu (Pakistan)</description>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem popularity="exotic">
+          <name>urd-navees</name>
+          <description>Urdu (Navees, Pakistan)</description>
+          <languageList>
+              <iso639Id>urd</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem popularity="exotic">
         <name>pt</name>
         <shortDescription>pt</shortDescription>
         <description>Portuguese</description>
@@ -1327,6 +1345,16 @@
             <description>Sanskrit symbols</description>
             <languageList>
               <iso639Id>san</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>urd-navees</name>
+            <shortDescription>ur</shortDescription>
+            <description>Urdu (Navees)</description>
+            <languageList>
+              <iso639Id>urd</iso639Id>
             </languageList>
           </configItem>
         </variant>
