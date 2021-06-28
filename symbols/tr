@@ -455,7 +455,7 @@ xkb_symbols "otkf" {
        
     key <TLDE> { [ quotedbl, guillemotleft, guillemotright, NoSymbol       ] };
     key <AB01> { [   U10C34,        U10C35,       NoSymbol, less           ] };
-    key <AB02> { [   U10C20,      NoSymbol,       multiply, greeter        ] };
+    key <AB02> { [   U10C20,      NoSymbol,       multiply, greater        ] };
     key <AB03> { [   U10C09,        U10C0A,     registered, guillemotleft  ] };
     key <AB04> { [   U10C3D,      NoSymbol,      copyright, guillemotright ] };
     key <AB05> { [   U10C18,        U10C19,       division, NoSymbol       ] };
