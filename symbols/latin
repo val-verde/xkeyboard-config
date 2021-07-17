@@ -43,8 +43,8 @@ xkb_symbols "basic" {
     key <TLDE>	{ [     grave, asciitilde,      notsign,      notsign ]	};
 
     key <BKSL>	{ [ backslash,        bar,   dead_grave,   dead_breve ]	};
-    key <AB01>	{ [         z,          Z, guillemotleft,        less ]	};
-    key <AB02>	{ [         x,          X, guillemotright,    greater ]	};
+    key <AB01>	{ [         z,          Z, guillemotleft,       U2039 ]	};
+    key <AB02>	{ [         x,          X, guillemotright,      U203A ]	};
     key <AB03>	{ [         c,          C,         cent,    copyright ]	};
     key <AB04>	{ [         v,          V, leftdoublequotemark, leftsinglequotemark ]	};
     key <AB05>	{ [         b,          B, rightdoublequotemark, rightsinglequotemark ] };
@@ -104,7 +104,7 @@ xkb_symbols "type3" {
     key <AC05>	{ [         g,          G, bracketright,          ENG ]	};
     key <AC08>	{ [         k,          K,      lstroke,    ampersand ]	};
 
-    key <AB01>	{ [         y,          Y, guillemotleft,        less ]	};
+    key <AB01>	{ [         y,          Y, guillemotleft,       U2039 ]	};
     key <AB04>	{ [         v,          V,           at,        grave ]	};
     key <AB05>	{ [         b,          B,    braceleft,   apostrophe ]	};
     key <AB06>	{ [         n,          N,   braceright,   braceright ]	};
