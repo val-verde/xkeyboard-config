@@ -19,7 +19,7 @@ xkb_symbols "basic" {
     key <AE12>	{ [     minus, underscore, dead_cedilla,  dead_ogonek ]	};
 
     key <AD01>	{ [         a,          A,           at,  Greek_OMEGA ]	};
-    key <AD02>	{ [         z,          Z,      lstroke,      Lstroke ]	};
+    key <AD02>	{ [         z,          Z,        U017F,      section ]	};
     key <AD03>	{ [         e,          E,     EuroSign,         cent ]	};
     key <AD09>  { [         o,          O,           oe,           OE ] }; // o O œ Œ
     key <AD11>	{ [dead_circumflex, dead_diaeresis,  bracketleft, dead_abovering ] };
