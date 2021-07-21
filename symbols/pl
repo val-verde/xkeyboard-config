@@ -69,6 +69,8 @@ xkb_symbols "legacy" {
     key <AB01>	{ [         z,          Z,    zabovedot,    Zabovedot ]	};
     key <AB02>	{ [         x,          X,       zacute,       Zacute ]	};
     key <AB03>	{ [         c,          C,       cacute,       Cacute ]	};
+    key <AB04>	{ [         v,          V, doublelowquotemark, leftsinglequotemark ] };
+    key <AB05>	{ [         b,          B, rightdoublequotemark, leftdoublequotemark ] };
     key <AB06>	{ [         n,          N,       nacute,       Nacute ]	};
 
     include "kpdl(comma)"
@@ -268,6 +270,8 @@ xkb_symbols "szl" {
     key <AB01>	{ [         z,          Z,    zabovedot,    Zabovedot ]	};
     key <AB02>	{ [         x,          X,       zacute,       Zacute ]	};
     key <AB03>	{ [         c,          C,       cacute,       Cacute ]	};
+    key <AB04>	{ [         v,          V, doublelowquotemark, leftsinglequotemark ] };
+    key <AB05>	{ [         b,          B, rightdoublequotemark, leftdoublequotemark ] };
     key <AB06>	{ [         n,          N,       nacute,       Nacute ]	};
 
     include "kpdl(comma)"
@@ -298,6 +302,8 @@ xkb_symbols "csb" {
     key <AC09>	{ [         l,          L,      lstroke,      Lstroke ]      };
 
     key <AB01>	{ [         z,          Z,    zabovedot,    Zabovedot ]	};
+    key <AB04>	{ [         v,          V, doublelowquotemark, leftsinglequotemark ] };
+    key <AB05>	{ [         b,          B, rightdoublequotemark, leftdoublequotemark ] };
     key <AB06>	{ [         n,          N,       nacute,       Nacute ]	};
 
     include "kpdl(comma)"
