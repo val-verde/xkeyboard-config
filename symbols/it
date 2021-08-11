@@ -3,6 +3,8 @@
 //                    Cadèmia Siciliana <l10n@cademiasiciliana.org>
 // 18 July 2018 - Fixed inconsistent 'ì' and 'ù' in it(intl)
 //                Alessandro Pellegrini <pellegrini@dis.uniroma1.it>
+// 28 February 2017 - Added it(fur), please refer to
+//                Fabio Tomat <f.t.public@gmail.com>
 
 default partial alphanumeric_keys
 xkb_symbols "basic" {
