@@ -79,6 +79,20 @@ xkb_symbols "legacy" {
 };
 
 partial alphanumeric_keys
+xkb_symbols "lefty" {
+    // 2020 by Simon Zelazny.
+    // Places  Ó, Ł, and Ń under the left typing hand.
+    // For description and rationale, see: https://pzel.name/pl-lefty.html
+    include "pl(basic)"
+
+    name[Group1]="Polish (lefty)";
+    key <AD01>	{ [         q,          Q,      oacute,        Oacute ]	};
+    key <AD02>	{ [         w,          W,     lstroke,       Lstroke ]	};
+    key <AC03>	{ [         d,          D,      nacute,        Nacute ]	};
+};
+
+
+partial alphanumeric_keys
 xkb_symbols "qwertz" {
 
     include "latin(type3)"

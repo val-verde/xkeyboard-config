@@ -549,6 +549,12 @@
             <description>Polish (Glagolica)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem popularity="exotic">
+            <name>lefty</name>
+            <description>Polish (lefty)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
